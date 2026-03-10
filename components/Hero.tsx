@@ -185,12 +185,12 @@ export default function Hero() {
 
             {/* Outer ring */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-accent/30 p-1">
-              <div className="w-full h-full rounded-full border border-accent/20 overflow-hidden bg-bg-card flex items-center justify-center">
-                <div className="w-full h-full bg-gradient-to-br from-accent/10 via-bg-card to-bg-secondary flex items-center justify-center">
-                  <span className="text-6xl md:text-7xl font-black text-accent/60 select-none">
-                    MMJ
-                  </span>
-                </div>
+              <div className="w-full h-full rounded-full border border-accent/20 overflow-hidden bg-bg-card">
+                <img
+                  src="/profile.jpg"
+                  alt="Manu Mathew Jiss"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             </div>
 
