@@ -189,7 +189,7 @@ export default function Hero() {
                 <img
                   src="/profile.jpg"
                   alt="Manu Mathew Jiss"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
