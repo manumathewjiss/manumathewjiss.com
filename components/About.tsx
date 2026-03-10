@@ -88,7 +88,7 @@ export default function About() {
                 Get In Touch
               </a>
               <a
-                href="https://linkedin.com/in/manumathewjiss"
+                href="https://linkedin.com/in/manu-mathew-jiss"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost text-xs"

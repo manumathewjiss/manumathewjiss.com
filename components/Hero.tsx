@@ -155,7 +155,7 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/manumathewjiss"
+              href="https://linkedin.com/in/manu-mathew-jiss"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted hover:text-accent transition-colors"
