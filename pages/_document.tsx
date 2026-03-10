@@ -5,7 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/favicon.jpg" />
         <meta name="theme-color" content="#080808" />
         <meta name="description" content="Manu Mathew Jiss — AI Engineer, ML Researcher & Full-Stack Developer based in San Francisco Bay Area. Master's student at University of the Pacific." />
         <meta property="og:title" content="Manu Mathew Jiss | AI Engineer & ML Researcher" />
