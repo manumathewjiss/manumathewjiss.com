@@ -24,7 +24,7 @@ export default function Research() {
         <div className="accent-line" />
         <h2 className="section-heading">Research</h2>
         <p className="section-subheading">
-          Published and ongoing research across NLP, fake account detection, sentiment analysis, and autonomous systems.
+          Publication (LIMFADD), the SMC-under-review pipeline, and related projects—with direct links on each card (also listed under Experience for advisor Dr.&nbsp;Tapadhir&nbsp;Das).
         </p>
 
         {/* Featured publication — driven by data/research.ts */}
@@ -45,7 +45,26 @@ export default function Research() {
               </span>
             </div>
 
-            <h3 className="text-white font-bold text-base mb-2 leading-snug">{featured.title}</h3>
+            <h3 className="text-white font-bold text-base mb-3 leading-snug">{featured.title}</h3>
+
+            {featured.link && (
+              <a
+                href={featured.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-4 inline-flex w-full sm:w-auto min-w-[12rem] items-center justify-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-bold text-black shadow-lg shadow-accent/25 hover:brightness-110 transition-all"
+              >
+                {featured.linkLabel ?? "Open publication"}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+            )}
 
             <p className="text-text-secondary text-sm leading-relaxed mb-3">{featured.description}</p>
 
@@ -67,32 +86,12 @@ export default function Research() {
               </p>
             )}
 
-            <div className="flex flex-wrap items-center gap-3">
-              {featured.link && (
-                <a
-                  href={featured.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary text-xs px-4 py-2"
-                >
-                  {featured.linkLabel ?? "Open link"}
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
-              )}
-              <div className="flex flex-wrap gap-1.5">
-                {featured.tags.slice(0, 5).map((tag) => (
-                  <span key={tag} className="tag-chip text-xs">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2 mt-4 mb-3">
+              {featured.tags.slice(0, 5).map((tag) => (
+                <span key={tag} className="tag-chip text-xs">
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
         </div>
@@ -144,10 +143,10 @@ export default function Research() {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-accent hover:underline mt-auto inline-flex items-center gap-1"
+                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-accent/50 bg-accent/10 px-3 py-2.5 text-xs font-semibold text-accent hover:bg-accent/20 hover:border-accent transition-colors mt-auto"
                   >
                     {item.linkLabel ?? "Open link"}
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
