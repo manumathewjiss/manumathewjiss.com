@@ -1,10 +1,26 @@
 const PACIFIC_URL = "https://www.pacific.edu";
 
 const stats = [
-  { label: "Publications", value: "1+", sub: "IEEE ISTAS25" },
-  { label: "Featured projects", value: "4", sub: "Courses & research" },
-  { label: "Accuracy", value: "97%", sub: "LIMFADD model" },
-  { label: "APIs Integrated", value: "8+", sub: "Startups & pipelines" },
+  {
+    value: "5x",
+    label: "Graduate research roles",
+    sub: "Pacific labs covering NLP, robotics, student wellness, Reddit/VADER workloads",
+  },
+  {
+    value: "4",
+    label: "Documented builds",
+    sub: "Weather multi-DB pipeline plus three agritech CV studies (crop, areca, pest)",
+  },
+  {
+    value: "1+",
+    label: "Peer-reviewed research",
+    sub: "IEEE ISTAS25 (LIMFADD); SMC three-phase NLP work under review",
+  },
+  {
+    value: "4+",
+    label: "Data stack layers",
+    sub: "MongoDB lake, ClickHouse warehouse, Redis cache, Express services (weather system)",
+  },
 ];
 
 const education = [
