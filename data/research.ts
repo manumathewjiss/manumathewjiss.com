@@ -7,6 +7,8 @@ export interface Research {
   date: string;
   link?: string;
   linkLabel?: string;
+  secondaryLink?: string;
+  secondaryLinkLabel?: string;
   github?: string;
   type: "conference" | "research" | "ongoing";
   advisor?: string;
@@ -60,12 +62,15 @@ export const research: Research[] = [
     id: 4,
     title: "AI-Driven Perception Stack for F1TENTH Autonomous Racing",
     description:
-      "Graduate project under Dr. Dongbin Lee building on the upstream F1TENTH autonomy stack with ROS 2 Humble on NVIDIA Jetson Orin Nano: LiDAR + stereo fusion, waypoint tracking, reactive obstacle resets, reproducible ROS bags, and Dockerized workflows aligned with classroom documentation.",
-    date: "Fall 2025",
-    type: "research",
+      "Hands-on autonomy track with Dr. Dongbin Lee on NVIDIA Jetson Orin Nano and ROS 2 Humble: fused LiDAR and ZED stereo streams, waypoint following, reactive obstacle resets, CUDA-aware Docker deployments, and regression-grade ROS bags. Update: layered in SignSight, a template-guided vision-language framework blending CLIP-style semantic cues with geometric sign templates so traffic-sign hypotheses stay stable at racing speeds. The integrated Jetson-centric study is undergoing peer review for a CVPR 2026 submission on OpenReview while F1TENTH experimentation continues for classroom demos.",
+    conference: "CVPR 2026 (under review)",
+    date: "August 2025 – Present",
+    type: "ongoing",
     advisor: "Dr. Dongbin Lee, University of the Pacific",
-    link: "https://f1tenth.org/",
-    linkLabel: "F1TENTH platform docs",
-    tags: ["ROS 2", "Autonomous Systems", "Computer Vision", "Sensor Fusion", "Embedded AI"],
+    link: "https://openreview.net/forum?id=Uj7BvxrESp&noteId=JxcVGhoZYI",
+    linkLabel: "OpenReview submission",
+    secondaryLink: "https://f1tenth.org/",
+    secondaryLinkLabel: "F1TENTH platform docs",
+    tags: ["ROS 2", "Jetson Orin", "CLIP", "VLM", "Sensor Fusion", "Autonomous Racing"],
   },
 ];

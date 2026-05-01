@@ -11,6 +11,8 @@ export interface Experience {
   linkLabel?: string;
   /** Source code repository */
   github?: string;
+  secondaryLink?: string;
+  secondaryLinkLabel?: string;
 }
 
 
@@ -126,15 +128,17 @@ export const experiences: Experience[] = [
     id: 6,
     role: "Graduate Research Assistant",
     company: "University of the Pacific (Advisor: Dr. Dongbin Lee)",
-    duration: "Fall 2025",
+    duration: "August 2025 – Present",
     type: "research",
-    link: "https://f1tenth.org/",
-    linkLabel: "F1TENTH platform",
+    link: "https://openreview.net/forum?id=Uj7BvxrESp&noteId=JxcVGhoZYI",
+    linkLabel: "OpenReview submission",
+    secondaryLink: "https://f1tenth.org/",
+    secondaryLinkLabel: "F1TENTH platform docs",
     bullets: [
-      "Built an AI perception and autonomy stack around the documented F1TENTH ROS 2 reference architecture: LiDAR scan pipelines, fused ZED Stereo odometry checkpoints, Ackermann kinematics bridged via standard AckermannDriveStamped ROS messages, and reproducible ROS bag capture for regressions.",
-      "Containerized ROS 2 Humble workspaces on NVIDIA Jetson Orin Nano with ARM64-aligned Docker workflows (CUDA runtime + JetPack overlays) mirroring coursework guidance in Project Documentations (autonomous car section).",
-      "Implemented iterative lane trackers, reactive obstacle resets, Pure Pursuit style waypoint pursuits, hardware-in-loop safeties, and calibration scripts so classroom mini-videos map directly to repeatable bring-up notebooks.",
+      "Integrated LiDAR, ZED stereo, CUDA-aware Docker stacks, ROS 2 Humble controls, waypoint tracking, and regression ROS bags atop the NVIDIA Jetson Orin Nano F1TENTH stack used in Dr. Lee’s autonomy lab sequences.",
+      "Extended the program with SignSight, a vision-language fusion template matcher that grounds CLIP-style semantics with handcrafted sign primitives for credible onboard detections during high-speed racing loops.",
+      "CVPR 2026 manuscript under peer review via OpenReview while iterating hardware bring-up notebooks, Pure Pursuit baselines, and obstacle recovery behaviors for classroom demonstrations.",
     ],
-    tech: ["ROS 2", "OpenCV", "PyTorch", "Docker", "NVIDIA Jetson", "LiDAR", "ZED SDK"],
+    tech: ["ROS 2", "OpenCV", "PyTorch", "Docker", "NVIDIA Jetson", "CLIP", "LiDAR", "ZED SDK"],
   },
 ];
