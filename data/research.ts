@@ -51,7 +51,7 @@ export const research: Research[] = [
     description:
       "Large-scale trajectory research on 324+ Reddit discussions in the ReleaseTrain.io ecosystem. Built a Python pipeline using VADER, REST cohort APIs, and custom reliability metrics comparing author versus community sentiment, validated via human labeling and confusion matrices.",
     date: "Summer 2025 – Present",
-    type: "research",
+    type: "ongoing",
     advisor: "Dr. Solomon Berhe, University of the Pacific",
     link: "https://beamish-custard-f44097.netlify.app/research-open-text-sentimental/web/",
     linkLabel: "Open live dashboard",
