@@ -17,14 +17,18 @@ const typeConfig = {
 
 export default function Research() {
   const featured = research[0];
+  const featuredType = typeConfig[featured.type];
 
   return (
     <section id="research" className="py-24 section-divider">
       <div className="max-w-6xl mx-auto px-6">
         <div className="accent-line" />
         <h2 className="section-heading">Research</h2>
+        <p className="text-sm font-semibold text-green-400/95 tracking-wide mb-2">Ongoing research</p>
         <p className="section-subheading">
-          Publication (LIMFADD), the SMC-under-review pipeline, and related work. Cards link to demos, conferences, publications, plus matching GitHub repositories where noted.
+          Featured publication:{" "}
+          <span className="text-text-primary">LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Spring 2024</span>.
+          Concurrent tracks include the SMC three-phase sentiment and authenticity pipeline on social comments, Reddit software-update sentiment trajectories with a live dashboard, and Jetson ROS 2 perception plus SignSight for F1TENTH. Cards link to papers, dashboards, conferences, and GitHub.
         </p>
 
         {/* Featured publication driven by data/research.ts */}
@@ -33,8 +37,8 @@ export default function Research() {
           <div className="pl-4">
             <div className="flex items-start justify-between gap-4 mb-3">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-xs px-2 py-0.5 rounded border bg-accent/10 text-accent border-accent/20 font-semibold">
-                  Conference Paper
+                <span className={`text-xs px-2 py-0.5 rounded border font-semibold ${featuredType.color}`}>
+                  {featuredType.label}
                 </span>
                 {featured.conference && (
                   <span className="text-xs text-text-muted">{featured.conference}</span>
