@@ -1,3 +1,5 @@
+const PACIFIC_URL = "https://www.pacific.edu";
+
 const stats = [
   { label: "Publications", value: "1+", sub: "IEEE ISTAS25" },
   { label: "Featured projects", value: "4", sub: "Courses & research" },
@@ -9,6 +11,7 @@ const education = [
   {
     degree: "M.S. Computer Science",
     school: "University of the Pacific",
+    schoolUrl: PACIFIC_URL,
     location: "Stockton, CA",
     year: "Spring 2026",
     focus: "Machine Learning, Generative AI, AI Systems",
@@ -41,7 +44,16 @@ export default function About() {
                 <span className="text-white font-medium">
                   Master&apos;s student in Computer Science
                 </span>{" "}
-                at the University of the Pacific, specializing in Machine
+                at the{" "}
+                <a
+                  href={PACIFIC_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent font-medium underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                >
+                  University of the Pacific
+                </a>
+                , specializing in Machine
                 Learning, Generative AI, and AI systems engineering. I thrive
                 at the boundary between research and real-world deployment.
               </p>
@@ -143,7 +155,18 @@ export default function About() {
                         {edu.degree}
                       </p>
                       <p className="text-accent text-xs font-medium mt-0.5">
-                        {edu.school}
+                        {edu.schoolUrl ? (
+                          <a
+                            href={edu.schoolUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline decoration-accent/50 underline-offset-2 hover:text-white hover:decoration-accent transition-colors"
+                          >
+                            {edu.school}
+                          </a>
+                        ) : (
+                          edu.school
+                        )}
                       </p>
                       <p className="text-text-muted text-xs mt-1">
                         {edu.location}

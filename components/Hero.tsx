@@ -1,4 +1,22 @@
 import { useEffect, useState } from "react";
+import type { ReactNode } from "react";
+
+const PACIFIC_URL = "https://www.pacific.edu";
+
+const practicedTitlesRow1 = [
+  "Masters graduate",
+  "Research Assistant",
+  "Teaching Assistant",
+  "Co-founder",
+  "Machine Learning Engineer",
+];
+
+const practicedTitlesRow2 = [
+  "AI Research Engineer",
+  "Software Engineer",
+  "Robotics Engineer",
+  "Generative AI Engineer",
+];
 
 const roles = [
   "AI Engineer",
@@ -7,9 +25,24 @@ const roles = [
   "GenAI Builder",
 ];
 
-const highlights = [
+const highlights: { label: string; sub: ReactNode }[] = [
   { label: "Co-Founder", sub: "2 AI Startups" },
-  { label: "Research Assistant", sub: "x4 at University of the Pacific" },
+  {
+    label: "Research Assistant",
+    sub: (
+      <>
+        x5 at{" "}
+        <a
+          href={PACIFIC_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent underline decoration-accent/50 underline-offset-2 hover:text-white hover:decoration-accent transition-colors"
+        >
+          University of the Pacific
+        </a>
+      </>
+    ),
+  },
   { label: "Teaching Assistant", sub: "Security Analytics" },
   { label: "IEEE Published", sub: "ISTAS25 Conference" },
 ];
@@ -114,8 +147,15 @@ export default function Hero() {
 
           <p className="text-text-secondary leading-relaxed max-w-md mb-8 text-sm">
             Master&apos;s student in Computer Science at{" "}
-            <span className="text-white">University of the Pacific</span>.
-            Building AI systems that work in the real world, from multi-model
+            <a
+              href={PACIFIC_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline decoration-accent/45 underline-offset-4 hover:text-accent hover:decoration-accent transition-colors"
+            >
+              University of the Pacific
+            </a>
+            . Building AI systems that work in the real world, from multi-model
             trading platforms to autonomous robots.
           </p>
 
@@ -209,20 +249,24 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Floating badges */}
+            {/* Floating role badges */}
             <div
-              className="absolute -top-2 -right-4 bg-bg-card border border-border-subtle rounded-xl px-3 py-2 shadow-lg animate-float"
+              className="absolute -top-2 -right-2 md:-right-4 bg-bg-card border border-border-subtle rounded-xl px-3 py-2 shadow-lg animate-float max-w-[min(248px,calc(100vw-10rem))]"
               style={{ animationDelay: "1s" }}
             >
-              <p className="text-xs text-text-secondary">Published</p>
-              <p className="text-sm font-semibold text-accent">IEEE ISTAS25</p>
+              <p className="text-xs text-text-secondary mb-1">Titles</p>
+              <p className="text-[11px] sm:text-xs font-semibold text-accent leading-snug">
+                {practicedTitlesRow1.join(" · ")}
+              </p>
             </div>
             <div
-              className="absolute -bottom-2 -left-4 bg-bg-card border border-border-subtle rounded-xl px-3 py-2 shadow-lg animate-float"
+              className="absolute -bottom-2 -left-2 md:-left-4 bg-bg-card border border-border-subtle rounded-xl px-3 py-2 shadow-lg animate-float max-w-[min(240px,calc(100vw-10rem))]"
               style={{ animationDelay: "2s" }}
             >
-              <p className="text-xs text-text-secondary">Accuracy</p>
-              <p className="text-sm font-semibold text-accent">97% DNN</p>
+              <p className="text-xs text-text-secondary mb-1">Expertise</p>
+              <p className="text-[11px] sm:text-xs font-semibold text-accent leading-snug">
+                {practicedTitlesRow2.join(" · ")}
+              </p>
             </div>
           </div>
         </div>
