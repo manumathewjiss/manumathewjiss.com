@@ -6,6 +6,9 @@ export interface Experience {
   type: "startup" | "research" | "teaching";
   bullets: string[];
   tech?: string[];
+  /** Primary URL shown on the timeline card (live product, dashboard, paper hub, etc.) */
+  link?: string;
+  linkLabel?: string;
 }
 
 export const experiences: Experience[] = [
@@ -15,10 +18,12 @@ export const experiences: Experience[] = [
     company: "Stock Crusher (GenAI Startup)",
     duration: "Summer 2025 – Present",
     type: "startup",
+    link: "https://stockcrusher.com",
+    linkLabel: "stockcrusher.com",
     bullets: [
-      "Built and deployed a production-ready multi-AI trading platform integrating 8+ real-time market APIs.",
-      "Implemented a weighted consensus algorithm across Gemini, Perplexity, and OpenAI for BUY/SELL/HOLD signals.",
-      "Delivered via Flask APIs and a React + Tailwind dashboard with resilient cloud deployment.",
+      "Built and shipped Stock Crusher, a production multi-agent trading intelligence platform integrating 8+ real-time APIs (Reddit, Finnhub, NewsAPI, X/Twitter).",
+      "Implemented weighted triple-AI consensus (Gemini, Perplexity, OpenAI), custom momentum scoring, and deterministic guardrails powering BUY / SELL / HOLD outputs.",
+      "Delivered Flask services and a React + Tailwind analytics dashboard deployed on Render for resilient day-to-day use.",
     ],
     tech: ["Python", "Flask", "React", "OpenAI", "Gemini", "Perplexity", "Render.com"],
   },
@@ -28,10 +33,12 @@ export const experiences: Experience[] = [
     company: "MealMuse (AI-Powered iOS Startup — Live on App Store)",
     duration: "Fall 2025 – Present",
     type: "startup",
+    link: "https://apps.apple.com/us/app/meal-muse-recipes/id6757258154",
+    linkLabel: "App Store",
     bullets: [
-      "Launched a production-ready AI-powered iOS app using SwiftUI and Node.js/TypeScript (Fastify) backend.",
-      "Enabled personalized recipe generation via text, voice, and image inputs.",
-      "Built scalable OpenAI GPT-4o-mini infrastructure with caching, reducing LLM calls by 80–90%.",
+      "Launched Meal Muse Recipes on the App Store: SwiftUI client with Fastify + PostgreSQL backend for secure, scalable recipe workflows.",
+      "Shipped multimodal prompting (text, optional voice/image) against GPT-style models plus TTL caching and quotas, targeting ~80–90% fewer redundant LLM calls.",
+      "Productized onboarding, recipe steps, calorie estimates, and privacy-forward analytics hooks suitable for iterative App Store releases.",
     ],
     tech: ["Swift", "SwiftUI", "Node.js", "TypeScript", "PostgreSQL", "OpenAI", "Fastify"],
   },
@@ -54,10 +61,12 @@ export const experiences: Experience[] = [
     company: "University of the Pacific (Advisor: Dr. Pramod Gupta)",
     duration: "Spring 2026 – Present",
     type: "research",
+    link: "https://www.aimooddiary.com",
+    linkLabel: "AIMoodDiary",
     bullets: [
-      "Developed MoodMirror, an AI-powered student emotional wellness tracking system.",
-      "Integrated GPT-4o-mini diary generation with a fine-tuned RoBERTa emotion classification model.",
-      "Built with Next.js, FastAPI, and PostgreSQL with interactive analytics for mood trend detection.",
+      "Shipped AIMoodDiary — a student emotional wellness journaling suite that blends GPT-assisted reflections with interactive mood analytics dashboards.",
+      "Fine-tuned a RoBERTa classifier on supervised affect corpora to surface weekly emotion trends alongside estimated confidence bands.",
+      "Next.js frontend, FastAPI microservices, and PostgreSQL back-end deliver rapid iteration cycles for stakeholder demos and longitudinal studies.",
     ],
     tech: ["Next.js", "FastAPI", "PostgreSQL", "RoBERTa", "GPT-4o-mini"],
   },
@@ -67,10 +76,12 @@ export const experiences: Experience[] = [
     company: "University of the Pacific (Advisor: Dr. Solomon Berhe)",
     duration: "Summer 2025 – Present",
     type: "research",
+    link: "https://beamish-custard-f44097.netlify.app/research-open-text-sentimental/web/",
+    linkLabel: "Live dashboard",
     bullets: [
-      "Conducted large-scale sentiment trajectory research on 324+ Reddit discussions within the ReleaseTrain.io ecosystem.",
-      "Built a Python-based pipeline using VADER, REST APIs, and custom quality/reliability metrics.",
-      "Compared author vs. community sentiment dynamics, validated through human labeling and confusion matrices.",
+      "Modeled longitudinal sentiment on 324+ ReleaseTrain-fed Reddit cohorts spanning minScore/maxScore-balanced slices pulled via official APIs.",
+      "Engineered reproducible ingestion + QA scripts (duplicate filtering, lexical checks) before VADER-derived trajectories are visualized in Plotly.",
+      "Deployed a public comparative VADER storytelling dashboard highlighting author vs community drift, backed by adjudicated confusion-matrix baselines.",
     ],
     tech: ["Python", "VADER", "REST APIs", "NLP", "Data Visualization"],
   },

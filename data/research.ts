@@ -6,6 +6,8 @@ export interface Research {
   venue?: string;
   date: string;
   link?: string;
+  /** Short CTA label for primary link (featured card, grids) */
+  linkLabel?: string;
   type: "conference" | "research" | "ongoing";
   advisor?: string;
   tags: string[];
@@ -14,35 +16,42 @@ export interface Research {
 export const research: Research[] = [
   {
     id: 1,
-    title: "LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Dataset",
+    title: "LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Spring 2024",
     description:
-      "Introduced a novel multi-class Instagram fake account detection dataset using LLM-based data augmentation. Classifies accounts into real, spam, scam, and bot categories with 97% DNN accuracy. Integrated LIME-based Explainable AI for model transparency.",
+      "Developed LIMFADD, an LLM-generated dataset for Instagram fake account detection enabling classification into real, spam, scam, and bot categories with 97% accuracy. Designed the data-collection and XAI-based validation pipeline; paper published at IEEE ISTAS 2025 with TechRxiv preprint.",
     conference: "IEEE ISTAS25",
     venue: "International Symposium on Technology and Society, Santa Clara University, CA",
-    date: "Fall 2025",
-    link: "https://techrxiv.org",
+    date: "September 2025 – April 2026",
+    link: "https://www.techrxiv.org/doi/full/10.36227/techrxiv.174613142.27190162/v1",
+    linkLabel: "View on TechRxiv",
     type: "conference",
-    tags: ["Fake Account Detection", "LLM Augmentation", "XAI", "Deep Learning", "Instagram"],
+    advisor: "Dr. Tapadhir Das, University of the Pacific",
+    tags: ["Fake Account Detection", "LLM Augmentation", "XAI / LIME", "Deep Learning", "Instagram"],
   },
   {
     id: 2,
     title: "Sentiment Trajectory Analysis in Software Update Reddit Discussions",
     description:
-      "Conducted large-scale sentiment trajectory research on 324+ Reddit discussions in the ReleaseTrain.io ecosystem. Built a Python pipeline using VADER to compare author vs. community sentiment dynamics over time, validated through human labeling and confusion matrices.",
+      "Large-scale trajectory research on 324+ Reddit discussions in the ReleaseTrain.io ecosystem. Built a Python pipeline using VADER, REST cohort APIs, and custom reliability metrics comparing author versus community sentiment, validated via human labeling and confusion matrices.",
     date: "Summer 2025 – Present",
     type: "research",
     advisor: "Dr. Solomon Berhe, University of the Pacific",
+    link: "https://beamish-custard-f44097.netlify.app/research-open-text-sentimental/web/",
+    linkLabel: "Comparative VADER dashboard",
     tags: ["NLP", "VADER", "Sentiment Analysis", "Reddit API", "Data Visualization"],
   },
   {
     id: 3,
-    title: "Real-Time Social Media Sentiment & Toxicity Analysis",
+    title: "A Three Phase Pipeline for Sentiment, Toxicity, and Account Authenticity on Social Media Comments",
     description:
-      "Three-phase NLP research pipeline achieving 90.23% sentiment accuracy on 18,214 YouTube comments. Implemented zero-shot toxicity classification into 7 categories using BART Large MNLI without fine-tuning. Supervised by Professor Tapadhir Das.",
-    date: "Fall 2025 – Present",
+      "Developed a three-phase AI pipeline combining sentiment analysis, toxicity detection, and account authenticity classification using XGBoost and LIME, achieving 96.9% accuracy. Designed an end-to-end system linking comment sentiment with account-level risk profiling for bot, scam, spam, and real account detection. Paper under review at IEEE SMC 2026.",
+    conference: "IEEE SMC 2026 (under review)",
+    date: "January 2025 – May 2025",
     type: "ongoing",
-    advisor: "Prof. Tapadhir Das, University of the Pacific",
-    tags: ["RoBERTa", "BERTweet", "BART", "Zero-Shot Learning", "NLP", "Toxicity Detection"],
+    advisor: "Dr. Tapadhir Das, University of the Pacific",
+    link: "https://www.ieeesmc2026.org",
+    linkLabel: "IEEE SMC 2026",
+    tags: ["XGBoost", "LIME", "Sentiment", "Toxicity", "Authenticity", "Social Media"],
   },
   {
     id: 4,

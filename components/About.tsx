@@ -47,16 +47,26 @@ export default function About() {
               </p>
               <p>
                 From co-founding a{" "}
-                <span className="text-accent font-medium">
+                <a
+                  href="https://stockcrusher.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent font-medium underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                >
                   GenAI trading startup (Stock Crusher)
-                </span>{" "}
-                and launching an{" "}
-                <span className="text-accent font-medium">
-                  AI-powered iOS app (MealMuse)
-                </span>{" "}
-                live on the App Store, to publishing research at{" "}
-                <span className="text-white font-medium">IEEE ISTAS25</span>{" "}
-                on fake account detection. I build things that work.
+                </a>{" "}
+                and launching{" "}
+                <a
+                  href="https://apps.apple.com/us/app/meal-muse-recipes/id6757258154"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent font-medium underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                >
+                  Meal Muse Recipes
+                </a>{" "}
+                on the App Store, to publishing research at{" "}
+                <span className="text-white font-medium">IEEE ISTAS25</span> on fake account detection.
+                I build things that work.
               </p>
               <p>
                 My research spans NLP, transformer models, autonomous robotics,

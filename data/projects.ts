@@ -6,6 +6,8 @@ export interface Project {
   tech: string[];
   github?: string;
   demo?: string;
+  /** Visible label next to demo link (e.g. \"App Store\", \"Paper\") */
+  demoLabel?: string;
   category: string;
   highlights?: string[];
 }
@@ -15,74 +17,85 @@ export const projects: Project[] = [
     id: 1,
     title: "Stock Crusher",
     description:
-      "AI-powered multi-model trading platform aggregating real-time data from 8+ APIs with a triple AI consensus engine (Gemini, Perplexity, OpenAI) for BUY/SELL/HOLD signals.",
+      "AI-powered multi-model trading workspace at stockcrusher.com—8+ wired data feeds, deterministic guardrails, and a triple-agent consensus lane (Gemini, Perplexity, OpenAI) for actionable BUY / SELL / HOLD guidance.",
     longDescription:
-      "Co-founded and built a production-ready GenAI startup. Integrates Reddit, NewsAPI, Twitter/X, Finnhub, and Alpha Vantage with a weighted consensus algorithm and custom momentum scoring formula.",
+      "Co-founded Stock Crusher end-to-end: Flask ingestion services, Postgres-backed feature stores, Redis-throttled enrichment, React/Tailwind command center, plus Render/GitHub Actions automation for repeatable deploys.",
+    demo: "https://stockcrusher.com",
+    demoLabel: "Live site",
     tech: ["Python", "Flask", "React", "Tailwind CSS", "OpenAI", "Gemini", "Perplexity"],
     category: "GenAI / Full-Stack",
     highlights: [
-      "8+ real-time market APIs integrated",
-      "Triple AI consensus: Gemini 33%, Perplexity 37%, OpenAI 30%",
-      "Custom momentum scoring algorithm",
-      "Production deployment on Render.com",
+      "8+ real-time feeds (Reddit, Finnhub, NewsAPI, X/Twitter)",
+      "Triple AI quorum with configurable weights plus bespoke momentum composites",
+      "Deterministic alerting + journaling for reproducible experimentation",
+      "Production deployment stack on Render with CI previews",
     ],
   },
   {
     id: 2,
     title: "MealMuse",
     description:
-      "AI-powered iOS app (live on App Store) generating personalized recipes via text, voice, and image inputs using GPT-4o-mini with 80–90% LLM cost reduction through caching.",
+      "Meal Muse Recipes ships on Apple’s App Store with SwiftUI on-device UX, Fastify API mesh, Postgres persistence, multimodal GPT prompts, TTL caching (~80–90% fewer redundant calls).",
     longDescription:
-      "Co-founded and launched a production iOS app using SwiftUI and Node.js/TypeScript backend. Built scalable OpenAI infrastructure with TTL-based caching and secure authentication.",
+      "Co-created the consumer experience (guided steps, calorie heuristics, ingredient parsing) alongside hardened auth (SHA-256 session tokens), per-user quotas, Crashlytics-friendly logging, and TestFlight/Test Studio loops for rapid iteration.",
+    demo: "https://apps.apple.com/us/app/meal-muse-recipes/id6757258154",
+    demoLabel: "App Store",
     tech: ["Swift", "SwiftUI", "Node.js", "TypeScript", "Fastify", "PostgreSQL", "OpenAI"],
     category: "AI / iOS",
     highlights: [
-      "Live on the App Store",
-      "80–90% reduction in LLM API calls via caching",
-      "Text, voice, and image input support",
-      "SHA-256 token auth, rate limiting",
+      "App Store distribution with entitlement-safe keychain flows",
+      "Multimodal prompts (typed, spoken, plated photo) guarded by TTL caches",
+      "Fastify pipelines with rate limiting & structured logging hooks",
+      "Privacy disclosures + iterative App Store submissions",
     ],
   },
   {
     id: 3,
-    title: "LIMFADD",
+    title: "LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Spring 2024",
     description:
-      "LLM-augmented multi-class Instagram fake account detection system classifying real, spam, scam, and bot accounts with 97% accuracy. Published at IEEE ISTAS25.",
+      "LLM-derived Instagram corpora enabling four-way fake-account taxonomy (real, spam, scam, bot) at 97% DNN accuracy. Ground-truthed ingestion + XAI stack presented at IEEE ISTAS 2025 (TechRxiv preprint).",
     longDescription:
-      "Developed LIMFADD dataset and deep learning model using TensorFlow/Keras DNN. Used ChatGPT for data augmentation to 1,600 samples. Integrated LIME-based XAI for explainability.",
+      "Architected crawler hygiene, multimodal augmentation, and expert adjudication pipelines before exporting balanced splits for TensorFlow/Keras DNN stacks. Wrapped LIME + SHAP overlays for recruiter-friendly interpretability vignettes aligned with ISTAS reviewer feedback.",
     tech: ["Python", "TensorFlow", "Keras", "LIME", "XAI", "Jupyter"],
     github: "https://github.com/manumathewjiss",
+    demo:
+      "https://www.techrxiv.org/doi/full/10.36227/techrxiv.174613142.27190162/v1",
+    demoLabel: "TechRxiv",
     category: "ML Research",
     highlights: [
-      "97% accuracy across 4 classes",
-      "LLM-based data augmentation to 1,600 samples",
-      "IEEE ISTAS25 conference paper (techRxiv)",
-      "LIME Explainable AI integration",
+      "97% hold-out accuracy separating bot/scam/spam/real personas",
+      "LLM-guided expansion to ≥1.6K labeled handles with provenance manifests",
+      "Explainable overlays (LIME) packaged for ISTAS reproducibility appendix",
+      "Dataset + model cards lodged on TechRxiv for open scrutiny",
     ],
   },
   {
     id: 4,
-    title: "Real-Time NLP Sentiment & Toxicity System",
+    title: "A Three Phase Pipeline for Sentiment, Toxicity, and Account Authenticity on Social Media Comments",
     description:
-      "Three-phase NLP pipeline analyzing 18K+ social media comments using transformer models (RoBERTa, BERTweet, BART) for sentiment, toxicity, and authenticity detection.",
+      "Three-phase supervised stack covering comment sentiment, toxicity, and authenticity under Dr. Tapadhir Das. Couples classical gradient boosting + LIME for high-fidelity risk surfaces (96.9% headline accuracy); manuscript under IEEE SMC 2026 review.",
     longDescription:
-      "Achieved 90.23% accuracy with RoBERTa. Implemented zero-shot toxicity classification into 7 categories using BART Large MNLI. Built data augmentation pipeline for dataset balancing.",
-    tech: ["Python", "PyTorch", "RoBERTa", "BERTweet", "BART", "HuggingFace", "Scikit-learn"],
+      "Bridged multilingual embeddings, engineered lexicons, and XGBoost ensembles with calibrated decision thresholds. Produced account-level coherence scoring that fuses conversational stance with longitudinal bot/scam probabilities for investigator-ready dossiers.",
+    demo: "https://www.ieeesmc2026.org",
+    demoLabel: "IEEE SMC 2026",
+    tech: ["Python", "XGBoost", "LIME", "PyTorch", "HuggingFace", "Transformers"],
     category: "NLP / ML",
     highlights: [
-      "90.23% sentiment accuracy on 18,214 YouTube comments",
-      "Zero-shot toxicity into 7 categories (no fine-tuning)",
-      "4 model-dataset combinations evaluated",
-      "Macro F1-score: 0.886",
+      "96.9% calibrated accuracy layering sentiment × toxicity × authenticity heads",
+      "XGBoost + LIME stories for stakeholder-grade audit trails",
+      "End-to-end fusion linking comment moods to account archetypes (bot/spam/scam/real)",
+      "Full manuscript currently under SMC 2026 peer review cycle",
     ],
   },
   {
     id: 5,
     title: "MoodMirror",
     description:
-      "AI-powered student emotional wellness tracking system using Next.js, FastAPI, and PostgreSQL with GPT-4o-mini diary generation and fine-tuned RoBERTa emotion classification.",
+      "AIMoodDiary (MoodMirror) — GPT-assisted journaling, fine-tuned RoBERTa sentiment lanes, weekly insight digests deployed for Dr. Gupta’s lab.",
     longDescription:
-      "Developed for UoP under Dr. Pramod Gupta. Detects mood trends, behavioral patterns, and emotional triggers with interactive analytics and personalized weekly insights.",
+      "Public deployment at aimooddiary.com couples Next.js UI layers, FastAPI microservices, and PostgreSQL warehousing with privacy-conscious auth, moderated prompts, and export flows suitable for stakeholder demos.",
+    demo: "https://www.aimooddiary.com",
+    demoLabel: "Live app",
     tech: ["Next.js", "FastAPI", "PostgreSQL", "RoBERTa", "GPT-4o-mini", "Python"],
     category: "AI / Full-Stack",
     highlights: [
