@@ -18,7 +18,7 @@ export default function Resume() {
               download
               className="btn-outline text-xs px-4 py-2.5 justify-center inline-flex gap-2"
             >
-              Download PDF
+              Download Résumé
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"

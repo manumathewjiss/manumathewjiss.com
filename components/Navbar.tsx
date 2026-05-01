@@ -86,17 +86,6 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* Resume CTA */}
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href="/resume.pdf"
-            download
-            className="btn-outline text-xs px-4 py-2"
-          >
-            Download PDF
-          </a>
-        </div>
-
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -137,15 +126,6 @@ export default function Navbar() {
                 </button>
               </li>
             ))}
-            <li className="pt-2 border-t border-border-subtle mt-2">
-              <a
-                href="/resume.pdf"
-                download
-                className="btn-outline w-full justify-center text-xs py-2.5"
-              >
-                Download PDF
-              </a>
-            </li>
           </ul>
         </div>
       )}
