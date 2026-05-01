@@ -6,8 +6,8 @@ export interface Research {
   venue?: string;
   date: string;
   link?: string;
-  /** Short CTA label for primary link (featured card, grids) */
   linkLabel?: string;
+  github?: string;
   type: "conference" | "research" | "ongoing";
   advisor?: string;
   tags: string[];
@@ -24,6 +24,7 @@ export const research: Research[] = [
     date: "September 2025 – April 2026",
     link: "https://www.techrxiv.org/doi/full/10.36227/techrxiv.174613142.27190162/v1",
     linkLabel: "Paper on TechRxiv",
+    github: "https://github.com/manumathewjiss/LIMFADD",
     type: "conference",
     advisor: "Dr. Tapadhir Das, University of the Pacific",
     tags: ["Fake Account Detection", "LLM Augmentation", "XAI / LIME", "Deep Learning", "Instagram"],
@@ -39,6 +40,7 @@ export const research: Research[] = [
     advisor: "Dr. Tapadhir Das, University of the Pacific",
     link: "https://www.ieeesmc2026.org",
     linkLabel: "IEEE SMC 2026 (conference site)",
+    github: "https://github.com/manumathewjiss/nlp-social-media-harmful-content-detection",
     tags: ["XGBoost", "LIME", "Sentiment", "Toxicity", "Authenticity", "Social Media"],
   },
   {
@@ -51,6 +53,7 @@ export const research: Research[] = [
     advisor: "Dr. Solomon Berhe, University of the Pacific",
     link: "https://beamish-custard-f44097.netlify.app/research-open-text-sentimental/web/",
     linkLabel: "Open live dashboard",
+    github: "https://github.com/manumathewjiss/vader-sentiment-dashboard/tree/main/research-open-text-sentimental",
     tags: ["NLP", "VADER", "Sentiment Analysis", "Reddit API", "Data Visualization"],
   },
   {
