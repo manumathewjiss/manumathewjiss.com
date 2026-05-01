@@ -7,6 +7,7 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Research from "../components/Research";
 import Skills from "../components/Skills";
+import Resume from "../components/Resume";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
           <Projects />
           <Research />
           <Skills />
+          <Resume />
           <Contact />
         </main>
         <Footer />

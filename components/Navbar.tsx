@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Research", href: "#research" },
   { label: "Skills", href: "#skills" },
+  { label: "Résumé", href: "#resume" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -92,7 +93,7 @@ export default function Navbar() {
             download
             className="btn-outline text-xs px-4 py-2"
           >
-            Resume
+            Download PDF
           </a>
         </div>
 
@@ -142,7 +143,7 @@ export default function Navbar() {
                 download
                 className="btn-outline w-full justify-center text-xs py-2.5"
               >
-                Download Resume
+                Download PDF
               </a>
             </li>
           </ul>
