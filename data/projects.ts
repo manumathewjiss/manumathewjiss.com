@@ -6,183 +6,77 @@ export interface Project {
   tech: string[];
   github?: string;
   demo?: string;
-  /** Visible label next to demo link (e.g. \"App Store\", \"Paper\") */
+  /** Visible label next to demo link */
   demoLabel?: string;
   category: string;
   highlights?: string[];
 }
 
+/** Selected Projects: agritech CV pipelines, UAV analytics, classical ML baseline, weather data engineering. */
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Stock Crusher",
+    title: "Weather Data Engineering Pipeline",
     description:
-      "AI-powered multi-model trading workspace at stockcrusher.com—8+ wired data feeds, deterministic guardrails, and a triple-agent consensus lane (Gemini, Perplexity, OpenAI) for actionable BUY / SELL / HOLD guidance.",
+      "Multi-database weather telemetry stack (Project Documentations) pairing a MongoDB raw lake, ClickHouse warehousing, Redis hot cache, Node/Express ingestion, and Chart.js KPI views for sub-second exploratory loads.",
     longDescription:
-      "Co-founded Stock Crusher end-to-end: Flask ingestion services, Postgres-backed feature stores, Redis-throttled enrichment, React/Tailwind command center, plus Render/GitHub Actions automation for repeatable deploys.",
-    demo: "https://stockcrusher.com",
-    demoLabel: "Live site",
-    tech: ["Python", "Flask", "React", "Tailwind CSS", "OpenAI", "Gemini", "Perplexity"],
-    category: "GenAI / Full-Stack",
+      "Engineered ingestion jobs that hydrate daily Open-Meteo (and compatible) slices into Mongo collections with schema-version tags, lineage metadata, and idempotent checkpoints. Promoted aggregates into ClickHouse materialized projections for percentile windows, anomalies, and cross-region deltas while Redis shields the dashboard API from repetitive warehouse hits. Operational notes, Docker compose targets, retention policies, and operator runbooks were captured alongside the coursework documentation set.",
+    tech: ["Node.js", "MongoDB", "ClickHouse", "Redis", "Chart.js", "Python", "Docker", "REST APIs"],
+    category: "Data Engineering",
     highlights: [
-      "8+ real-time feeds (Reddit, Finnhub, NewsAPI, X/Twitter)",
-      "Triple AI quorum with configurable weights plus bespoke momentum composites",
-      "Deterministic alerting + journaling for reproducible experimentation",
-      "Production deployment stack on Render with CI previews",
+      "Incremental ETL with explicit lineage fields per ingestion batch",
+      "Redis-backed query memoization targeting sub-second UX on heavy charts",
+      "Multi-environment Docker layout for repeatable ClickHouse bootstrap",
+      "365+ simulated production days exercised for compaction + GC validation",
+      "Visualization layer documents drift checks between lake vs warehouse sums",
     ],
   },
   {
     id: 2,
-    title: "MealMuse",
+    title: "Crop Monitoring & Maturity Detection",
     description:
-      "Meal Muse Recipes ships on Apple’s App Store with SwiftUI on-device UX, Fastify API mesh, Postgres persistence, multimodal GPT prompts, TTL caching (~80–90% fewer redundant calls).",
+      "Phase 1 report: custom convolutional backbone over drone-derived plantation imagery for harvest readiness scoring above 86% hold-out accuracy, with UAV capture discipline and preprocessing called out explicitly.",
     longDescription:
-      "Co-created the consumer experience (guided steps, calorie heuristics, ingredient parsing) alongside hardened auth (SHA-256 session tokens), per-user quotas, Crashlytics-friendly logging, and TestFlight/Test Studio loops for rapid iteration.",
-    demo: "https://apps.apple.com/us/app/meal-muse-recipes/id6757258154",
-    demoLabel: "App Store",
-    tech: ["Swift", "SwiftUI", "Node.js", "TypeScript", "Fastify", "PostgreSQL", "OpenAI"],
-    category: "AI / iOS",
+      "Authored crop surveillance workflow aligning DJI-derived orthomosaic tiles with plantation phenology checkpoints. Implemented GPU-native TensorFlow pipelines with tiling, glare suppression, augmentation (rotation, photometric jitter), and calibrated train/validation splits guarded by stratified cultivar quotas. Exported confusion-matrix diagnostics comparing early vs mature classes and documented ROC behavior for stakeholder review panels as captured in Project phase 1 report.",
+    tech: ["Python", "CNN", "TensorFlow", "OpenCV", "Drone Imagery"],
+    category: "Computer Vision",
     highlights: [
-      "App Store distribution with entitlement-safe keychain flows",
-      "Multimodal prompts (typed, spoken, plated photo) guarded by TTL caches",
-      "Fastify pipelines with rate limiting & structured logging hooks",
-      "Privacy disclosures + iterative App Store submissions",
+      "Drone acquisition checklist + radiometric normalization before CNN inputs",
+      "Custom CNN classifier surpassing 86% accuracy with error analysis appendix",
+      "Augmentation policy tuned against class imbalance captured in Phase 1 report",
+      "Field validation notes aligning model scores with agronomist walkthroughs",
     ],
   },
   {
     id: 3,
-    title: "LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Spring 2024",
+    title: "On-Tree Areca Nut Fruit Maturity Detection",
     description:
-      "LLM-derived Instagram corpora enabling four-way fake-account taxonomy (real, spam, scam, bot) at 97% DNN accuracy. Ground-truthed ingestion + XAI stack presented at IEEE ISTAS 2025 (TechRxiv preprint).",
+      "Mini project report Spring 2022: DJI Mini SE mediated capture coupled with YOLOv5 for dense canopy occlusion, emphasizing deployment constraints and labeling taxonomy for staged maturity checkpoints.",
     longDescription:
-      "Architected crawler hygiene, multimodal augmentation, and expert adjudication pipelines before exporting balanced splits for TensorFlow/Keras DNN stacks. Wrapped LIME + SHAP overlays for recruiter-friendly interpretability vignettes aligned with ISTAS reviewer feedback.",
-    tech: ["Python", "TensorFlow", "Keras", "LIME", "XAI", "Jupyter"],
-    github: "https://github.com/manumathewjiss",
-    demo:
-      "https://www.techrxiv.org/doi/full/10.36227/techrxiv.174613142.27190162/v1",
-    demoLabel: "TechRxiv",
-    category: "ML Research",
+      "Mini_Project_Report (3) distilled an end-to-end vision stack for spotting areca inflorescences among cluttered foliage. Implemented YOLOv5 training regimes with mosaic & mix-up policy, tiling for small fruit signatures, ONNX export readiness, and post-processing NMS tweaks for aerial jitter. Narrated failure cases (dense leaf overlap, low-light passes) alongside mitigation steps and harvest timing recommendations mirrored in aerial survey appendices.",
+    tech: ["Python", "YOLOv5", "DJI Mini SE", "OpenCV", "Deep Learning"],
+    category: "Computer Vision",
     highlights: [
-      "97% hold-out accuracy separating bot/scam/spam/real personas",
-      "LLM-guided expansion to ≥1.6K labeled handles with provenance manifests",
-      "Explainable overlays (LIME) packaged for ISTAS reproducibility appendix",
-      "Dataset + model cards lodged on TechRxiv for open scrutiny",
+      "Dataset protocol for altitudes, overlaps, and gimbal presets on DJI Mini SE",
+      "Fine-tuned YOLO anchors for elongated nut clusters trapped in occlusion",
+      "Edge-friendly export experimentation for constrained inference paths",
+      "Spring 2022 mini project documentation with qualitative success stories",
     ],
   },
   {
     id: 4,
-    title: "A Three Phase Pipeline for Sentiment, Toxicity, and Account Authenticity on Social Media Comments",
-    description:
-      "Three-phase supervised stack covering comment sentiment, toxicity, and authenticity under Dr. Tapadhir Das. Couples classical gradient boosting + LIME for high-fidelity risk surfaces (96.9% headline accuracy); manuscript under IEEE SMC 2026 review.",
-    longDescription:
-      "Bridged multilingual embeddings, engineered lexicons, and XGBoost ensembles with calibrated decision thresholds. Produced account-level coherence scoring that fuses conversational stance with longitudinal bot/scam probabilities for investigator-ready dossiers.",
-    demo: "https://www.ieeesmc2026.org",
-    demoLabel: "IEEE SMC 2026",
-    tech: ["Python", "XGBoost", "LIME", "PyTorch", "HuggingFace", "Transformers"],
-    category: "NLP / ML",
-    highlights: [
-      "96.9% calibrated accuracy layering sentiment × toxicity × authenticity heads",
-      "XGBoost + LIME stories for stakeholder-grade audit trails",
-      "End-to-end fusion linking comment moods to account archetypes (bot/spam/scam/real)",
-      "Full manuscript currently under SMC 2026 peer review cycle",
-    ],
-  },
-  {
-    id: 5,
-    title: "MoodMirror",
-    description:
-      "AIMoodDiary (MoodMirror) — GPT-assisted journaling, fine-tuned RoBERTa sentiment lanes, weekly insight digests deployed for Dr. Gupta’s lab.",
-    longDescription:
-      "Public deployment at aimooddiary.com couples Next.js UI layers, FastAPI microservices, and PostgreSQL warehousing with privacy-conscious auth, moderated prompts, and export flows suitable for stakeholder demos.",
-    demo: "https://www.aimooddiary.com",
-    demoLabel: "Live app",
-    tech: ["Next.js", "FastAPI", "PostgreSQL", "RoBERTa", "GPT-4o-mini", "Python"],
-    category: "AI / Full-Stack",
-    highlights: [
-      "74.64% accuracy on 3-class emotion classification",
-      "Fine-tuned RoBERTa on GoEmotions dataset (54K samples)",
-      "GPT-4o-mini diary generation",
-      "Interactive mood analytics dashboard",
-    ],
-  },
-  {
-    id: 6,
-    title: "Weather Data Engineering Pipeline",
-    description:
-      "End-to-end multi-database weather analytics pipeline using MongoDB, ClickHouse, and Redis with incremental ETL, metadata lineage tracking, and real-time dashboard.",
-    longDescription:
-      "Built a production-style data pipeline: API → MongoDB (data lake) → ClickHouse (warehouse) → Redis (cache) → Express.js dashboard. Achieves sub-second load times via Redis caching.",
-    tech: ["Node.js", "MongoDB", "ClickHouse", "Redis", "Chart.js", "Python", "Docker"],
-    category: "Data Engineering",
-    highlights: [
-      "4+ database systems in one pipeline",
-      "365+ days of weather data processed",
-      "Sub-second dashboard via Redis caching",
-      "Incremental ETL with metadata lineage",
-    ],
-  },
-  {
-    id: 7,
-    title: "F1TENTH Autonomous Racing Car",
-    description:
-      "AI-driven perception and control stack for autonomous racing using NVIDIA Jetson Orin Nano and ROS 2, with computer vision and sensor fusion for real-time navigation.",
-    longDescription:
-      "Graduate research project under Dr. Dongbin Lee. Built complete ROS 2 Humble stack with Docker, implemented lane detection, obstacle avoidance, and object tracking with ZED stereo camera.",
-    tech: ["ROS 2", "Python", "PyTorch", "OpenCV", "Docker", "NVIDIA Jetson", "LiDAR"],
-    category: "Robotics / Embedded AI",
-    highlights: [
-      "NVIDIA Jetson Orin Nano + ROS 2 Humble",
-      "ZED 2i stereo camera integration",
-      "Cross-architecture ARM64 Docker builds",
-      "Real-time sensor fusion (LiDAR + Vision)",
-    ],
-  },
-  {
-    id: 8,
-    title: "Crop Monitoring & Maturity Detection",
-    description:
-      "Deep learning-based crop maturity detection system using a custom CNN model and drone imagery, achieving 86%+ accuracy in classifying plantation crop images.",
-    longDescription:
-      "Developed a deep learning crop maturity detection system using a custom CNN model that achieved over 86% accuracy in classifying plantation crop images captured by drones.",
-    tech: ["Python", "CNN", "TensorFlow", "OpenCV", "Drone Imaging"],
-    category: "Computer Vision",
-    highlights: [
-      "86%+ accuracy on plantation crop images",
-      "Custom CNN on drone-captured imagery",
-      "Real-time classification for harvest planning",
-      "Fall 2023 project",
-    ],
-  },
-  {
-    id: 9,
-    title: "On-Tree Areca Nut Fruit Maturity Detection",
-    description:
-      "YOLOv5-based deep learning model integrated with DJI Mini SE drones to detect and classify areca nut maturity in complex backgrounds, optimizing harvest timing.",
-    longDescription:
-      "Developed and deployed a YOLOv5 model on DJI Mini SE drones to detect areca nut fruit maturity in real-world, complex backgrounds. Improved yield estimation and harvest decision-making.",
-    tech: ["Python", "YOLOv5", "DJI Mini SE", "OpenCV", "Deep Learning"],
-    category: "Computer Vision",
-    highlights: [
-      "YOLOv5 deployed on DJI Mini SE drones",
-      "Maturity classification in complex backgrounds",
-      "Optimized harvest timing and yield estimation",
-      "Spring 2022 project",
-    ],
-  },
-  {
-    id: 10,
     title: "Pest Detection Using SVM",
     description:
-      "SVM-based pest detection system that preprocesses crop images and classifies infected vs. healthy tea leaves with high accuracy, enabling early pest identification.",
+      "mini_project_report (Fall 2022): handcrafted colour/texture cues feeding an RBF SVM separating healthy vs infected tea leaves for early scouting loops without heavy GPUs.",
     longDescription:
-      "Built an SVM-based pest detection system that preprocesses crop images and classifies infected vs. healthy tea leaves, enabling early pest identification for improved agricultural decision-making.",
+      "mini_project_report captured a reproducible preprocessing stack (Gaussian smoothing, LAB thresholding, leaf ROI extraction) paired with Histogram of Oriented Gradients-inspired texture vectors and PCA compression where applicable. Compared linear vs RBF kernels with grid-search gamma/C pairs, surfaced margin support vectors, and visualized confusion matrices highlighting false positives under monsoon-lit captures.",
     tech: ["Python", "SVM", "Scikit-learn", "OpenCV", "Image Processing"],
     category: "Computer Vision",
     highlights: [
-      "SVM classifier for tea leaf pest detection",
-      "Image preprocessing pipeline",
-      "Infected vs. healthy leaf classification",
-      "Fall 2022 project",
+      "Interpretable preprocessing chain documented for plantation partners",
+      "Kernelized SVM outperforming logistic baselines on low-dimensional features",
+      "Cross-validation regimen + precision/recall narratives for scouts",
+      "Fall 2022 coursework mini report with illustrative failure thumbnails",
     ],
   },
 ];

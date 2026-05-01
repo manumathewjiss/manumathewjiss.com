@@ -57,10 +57,12 @@ export const research: Research[] = [
     id: 4,
     title: "AI-Driven Perception Stack for F1TENTH Autonomous Racing",
     description:
-      "Developing an AI perception and control stack for F1TENTH autonomous racing using NVIDIA Jetson Orin Nano and ROS 2. Implements computer vision and sensor fusion for real-time lane detection, obstacle avoidance, and object tracking on embedded GPU platforms.",
+      "Graduate project under Dr. Dongbin Lee building on the upstream F1TENTH autonomy stack with ROS 2 Humble on NVIDIA Jetson Orin Nano: LiDAR + stereo fusion, waypoint tracking, reactive obstacle resets, reproducible ROS bags, and Dockerized workflows aligned with classroom documentation.",
     date: "Fall 2025",
     type: "research",
     advisor: "Dr. Dongbin Lee, University of the Pacific",
+    link: "https://f1tenth.org/",
+    linkLabel: "F1TENTH platform docs",
     tags: ["ROS 2", "Autonomous Systems", "Computer Vision", "Sensor Fusion", "Embedded AI"],
   },
 ];

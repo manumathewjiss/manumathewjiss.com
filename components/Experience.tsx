@@ -19,7 +19,7 @@ export default function Experience() {
         <div className="accent-line" />
         <h2 className="section-heading">Experience</h2>
         <p className="section-subheading">
-          Roles under Dr.&nbsp;Tapadhir&nbsp;Das (LIMFADD + SMC pipeline), startups, teaching, and other research—each linked product or publication uses the gold button under the dates.
+          Roles under Dr.&nbsp;Tapadhir&nbsp;Das (LIMFADD + SMC pipeline), startups, teaching, robotics, and other research. Linked products or publications use the gold button under the dates.
         </p>
 
         <div className="relative">

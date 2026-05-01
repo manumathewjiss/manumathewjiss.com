@@ -24,10 +24,10 @@ export default function Research() {
         <div className="accent-line" />
         <h2 className="section-heading">Research</h2>
         <p className="section-subheading">
-          Publication (LIMFADD), the SMC-under-review pipeline, and related projects—with direct links on each card (also listed under Experience for advisor Dr.&nbsp;Tapadhir&nbsp;Das).
+          Publication (LIMFADD), the SMC-under-review pipeline, and related work. Direct links on each card mirror what appears under Experience, including Tapadhir and Dongbin collaborations.
         </p>
 
-        {/* Featured publication — driven by data/research.ts */}
+        {/* Featured publication driven by data/research.ts */}
         <div className="mb-6 relative overflow-hidden glass-card border-accent/30 bg-gradient-to-r from-accent/5 to-transparent">
           <div className="absolute top-0 left-0 w-1 h-full bg-accent rounded-l-2xl" />
           <div className="pl-4">

@@ -8,9 +8,9 @@ export default function Document() {
         <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
         <link rel="apple-touch-icon" href="/favicon.jpg" />
         <meta name="theme-color" content="#080808" />
-        <meta name="description" content="Manu Mathew Jiss — AI Engineer, ML Researcher & Full-Stack Developer based in San Francisco Bay Area. Master's student at University of the Pacific." />
+        <meta name="description" content="Manu Mathew Jiss | AI Engineer, ML Researcher & Full-Stack Developer based in San Francisco Bay Area. Master's student at University of the Pacific." />
         <meta property="og:title" content="Manu Mathew Jiss | AI Engineer & ML Researcher" />
-        <meta property="og:description" content="Building AI systems that work in the real world — from multi-model trading platforms to autonomous robots." />
+        <meta property="og:description" content="Building AI systems that work in the real world: robotics, NLP, agritech analytics, data engineering, and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://manumathewjiss.com" />
         <meta name="twitter:card" content="summary_large_image" />

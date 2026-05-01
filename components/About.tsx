@@ -1,8 +1,8 @@
 const stats = [
   { label: "Publications", value: "1+", sub: "IEEE ISTAS25" },
-  { label: "Projects", value: "10+", sub: "Production-ready" },
+  { label: "Featured projects", value: "4", sub: "Courses & research" },
   { label: "Accuracy", value: "97%", sub: "LIMFADD model" },
-  { label: "APIs Integrated", value: "8+", sub: "In Stock Crusher" },
+  { label: "APIs Integrated", value: "8+", sub: "Startups & pipelines" },
 ];
 
 const education = [

@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { projects } from "../data/projects";
 
-const categories = ["All", "GenAI / Full-Stack", "AI / iOS", "ML Research", "NLP / ML", "AI / Full-Stack", "Data Engineering", "Robotics / Embedded AI", "Computer Vision"];
-
 const categoryColors: Record<string, string> = {
   "GenAI / Full-Stack": "bg-purple-500/10 text-purple-400 border-purple-500/20",
   "AI / iOS": "bg-pink-500/10 text-pink-400 border-pink-500/20",
@@ -29,7 +27,7 @@ export default function Projects() {
         <div className="accent-line" />
         <h2 className="section-heading">Selected Projects</h2>
         <p className="section-subheading">
-          Production deployments and papers—with a clear Live / Publication button on every card where it applies.
+          Deep dives from coursework documentation: UAV crop analytics, classical ML scouting, and a multi-database weather stack. Where a demo URL exists it appears as the gold button.
         </p>
 
         {/* Filter tabs */}

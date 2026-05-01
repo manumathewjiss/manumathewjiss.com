@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <title>Manu Mathew Jiss | AI Engineer & ML Researcher</title>
         <meta
           name="description"
-          content="Manu Mathew Jiss — AI Engineer, ML Researcher & Full-Stack Developer. Master's CS student at University of the Pacific. Published at IEEE ISTAS25."
+          content="Manu Mathew Jiss | AI Engineer, ML Researcher & Full-Stack Developer. Master's CS student at University of the Pacific. Published at IEEE ISTAS25."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

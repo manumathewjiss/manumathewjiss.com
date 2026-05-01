@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
   {
     id: 2,
     role: "Co-Founder & Software Engineer",
-    company: "MealMuse (AI-Powered iOS Startup — Live on App Store)",
+    company: "MealMuse (AI-Powered iOS Startup, live on App Store)",
     duration: "Fall 2025 – Present",
     type: "startup",
     link: "https://apps.apple.com/us/app/meal-muse-recipes/id6757258154",
@@ -64,7 +64,7 @@ export const experiences: Experience[] = [
     link: "https://www.aimooddiary.com",
     linkLabel: "AIMoodDiary",
     bullets: [
-      "Shipped AIMoodDiary — a student emotional wellness journaling suite that blends GPT-assisted reflections with interactive mood analytics dashboards.",
+      "Shipped AIMoodDiary: a student emotional wellness journaling suite that blends GPT-assisted reflections with interactive mood analytics dashboards.",
       "Fine-tuned a RoBERTa classifier on supervised affect corpora to surface weekly emotion trends alongside estimated confidence bands.",
       "Next.js frontend, FastAPI microservices, and PostgreSQL back-end deliver rapid iteration cycles for stakeholder demos and longitudinal studies.",
     ],
@@ -119,10 +119,12 @@ export const experiences: Experience[] = [
     company: "University of the Pacific (Advisor: Dr. Dongbin Lee)",
     duration: "Fall 2025",
     type: "research",
+    link: "https://f1tenth.org/",
+    linkLabel: "F1TENTH platform",
     bullets: [
-      "Developed an AI-driven perception and control stack for the F1TENTH Autonomous Racing Car.",
-      "Used Jetson Orin Nano and ROS 2 with computer vision and sensor fusion for real-time navigation.",
-      "Implemented cross-architecture ARM64 Docker workflows for embedded GPU deployment.",
+      "Built an AI perception and autonomy stack around the documented F1TENTH ROS 2 reference architecture: LiDAR scan pipelines, fused ZED Stereo odometry checkpoints, Ackermann kinematics bridged via standard AckermannDriveStamped ROS messages, and reproducible ROS bag capture for regressions.",
+      "Containerized ROS 2 Humble workspaces on NVIDIA Jetson Orin Nano with ARM64-aligned Docker workflows (CUDA runtime + JetPack overlays) mirroring coursework guidance in Project Documentations (autonomous car section).",
+      "Implemented iterative lane trackers, reactive obstacle resets, Pure Pursuit style waypoint pursuits, hardware-in-loop safeties, and calibration scripts so classroom mini-videos map directly to repeatable bring-up notebooks.",
     ],
     tech: ["ROS 2", "OpenCV", "PyTorch", "Docker", "NVIDIA Jetson", "LiDAR", "ZED SDK"],
   },
