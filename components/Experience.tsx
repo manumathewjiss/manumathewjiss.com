@@ -1,5 +1,7 @@
 import { experiences } from "../data/experience";
 
+const PACIFIC_URL = "https://www.pacific.edu";
+
 const typeColors: Record<string, string> = {
   startup: "bg-purple-500/10 text-purple-400 border-purple-500/20",
   research: "bg-blue-500/10 text-blue-400 border-blue-500/20",
@@ -19,7 +21,16 @@ export default function Experience() {
         <div className="accent-line" />
         <h2 className="section-heading">Experience</h2>
         <p className="section-subheading">
-          Roles under Dr.&nbsp;Tapadhir&nbsp;Das (LIMFADD + SMC pipeline), startups, teaching, robotics, and other research. Gold button: primary link; outlined row: GitHub when available.
+          Résumé snapshot: co-founded two shipped GenAI products (LLM-guided trading insights and Meal Muse on iOS), held five concurrent graduate research roles at{" "}
+          <a
+            href={PACIFIC_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent underline decoration-accent/45 underline-offset-4 hover:decoration-accent"
+          >
+            University of the Pacific
+          </a>{" "}
+          spanning Reddit trajectory analytics, NVIDIA Jetson / ROS&nbsp;2 racing stacks, SMC-review NLP authenticity pipelines, ISTAS-published LIMFADD, and RoBERTa-driven AIMoodDiary, backed by SOC analytics teaching support. Gold buttons surface live products, dashboards, conferences, or preprints; outlined rows jump to GitHub repositories.
         </p>
 
         <div className="relative">
