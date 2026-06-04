@@ -73,4 +73,18 @@ export const research: Research[] = [
     secondaryLinkLabel: "F1TENTH platform docs",
     tags: ["ROS 2", "Jetson Orin", "CLIP", "VLM", "Sensor Fusion", "Autonomous Racing"],
   },
+  {
+    id: 5,
+    title: "AIMoodDiary: Hybrid Emotion Inference for Reflective Journaling and Mood Analytics",
+    description:
+      "Built an end-to-end affective journaling system integrating transformer-based emotion classification, constrained LLM diary generation, and longitudinal mood analytics. A deployed RoBERTa 3-class model reaches 74.6% accuracy and 74.4% macro-F1 on a balanced GoEmotions split (n = 5,421). The diary pipeline combines user keywords and generated text via 72/28 weighted fusion with lexical calibration, evaluated through a five-configuration ablation and fusion-weight sensitivity analysis. Deployed as a live, non-clinical reflective wellness platform; submitted to IEEE ICMLA 2026.",
+    conference: "IEEE ICMLA 2026 (under review)",
+    date: "2025 – Present",
+    type: "ongoing",
+    link: "https://www.aimooddiary.com",
+    linkLabel: "Live app: aimooddiary.com",
+    secondaryLink: "/AIMoodDiary_ICMLA2026_Submission.pdf",
+    secondaryLinkLabel: "Read the paper (PDF)",
+    tags: ["Affective Computing", "RoBERTa", "GoEmotions", "LLM", "Hybrid Inference", "Mood Analytics"],
+  },
 ];
