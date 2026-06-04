@@ -83,6 +83,7 @@ export const research: Research[] = [
     type: "ongoing",
     link: "https://www.aimooddiary.com",
     linkLabel: "Live app: aimooddiary.com",
+    github: "https://github.com/manumathewjiss/moodmirror-student-wellness-tracker",
     tags: ["Affective Computing", "RoBERTa", "GoEmotions", "LLM", "Hybrid Inference", "Mood Analytics"],
   },
   {
