@@ -83,8 +83,6 @@ export const research: Research[] = [
     type: "ongoing",
     link: "https://www.aimooddiary.com",
     linkLabel: "Live app: aimooddiary.com",
-    secondaryLink: "/AIMoodDiary_ICMLA2026_Submission.pdf",
-    secondaryLinkLabel: "Read the paper (PDF)",
     tags: ["Affective Computing", "RoBERTa", "GoEmotions", "LLM", "Hybrid Inference", "Mood Analytics"],
   },
 ];
