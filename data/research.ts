@@ -85,4 +85,16 @@ export const research: Research[] = [
     linkLabel: "Live app: aimooddiary.com",
     tags: ["Affective Computing", "RoBERTa", "GoEmotions", "LLM", "Hybrid Inference", "Mood Analytics"],
   },
+  {
+    id: 6,
+    title: "Explainable Large Language Models for Cardiovascular Disease Detection: Opportunities, Challenges, and Ethical Considerations",
+    description:
+      "Single-author white paper using a mixed-method systematic review of 22 peer-reviewed articles plus thematic analysis to examine how Explainable AI (XAI) can address the black-box nature of LLMs in cardiovascular disease detection. Surveys SHAP- and LIME-based interpretability across EHR, ECG, and multimodal clinical pipelines, and synthesizes the technical, ethical, and adoption challenges for transparent, trustworthy clinical decision support.",
+    venue: "University of the Pacific, Department of Computer Science",
+    date: "Spring 2026",
+    type: "research",
+    link: "/Explainable_LLMs_CVD_White_Paper.pdf",
+    linkLabel: "Read the white paper (PDF)",
+    tags: ["Explainable AI", "LLMs", "Cardiovascular Disease", "SHAP / LIME", "Healthcare AI", "AI Ethics"],
+  },
 ];

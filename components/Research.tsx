@@ -130,7 +130,7 @@ export default function Research() {
         <p className="section-subheading">
           Featured publication:{" "}
           <span className="text-text-primary">LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Spring 2024</span>.
-          Concurrent tracks include the SMC three-phase sentiment and authenticity pipeline on social comments, Reddit software-update sentiment trajectories with a live dashboard, Jetson ROS 2 perception plus SignSight for F1TENTH, and AIMoodDiary, a deployed hybrid emotion-inference journaling platform submitted to ICMLA 2026. Cards link to papers, live apps, dashboards, conferences, and GitHub.
+          Concurrent tracks include the SMC three-phase sentiment and authenticity pipeline on social comments, Reddit software-update sentiment trajectories with a live dashboard, Jetson ROS 2 perception plus SignSight for F1TENTH, AIMoodDiary, a deployed hybrid emotion-inference journaling platform submitted to ICMLA 2026, and a white paper on explainable LLMs for cardiovascular disease detection. Cards link to papers, live apps, dashboards, conferences, and GitHub.
         </p>
 
         <div className="flex flex-col gap-6 mt-2">
