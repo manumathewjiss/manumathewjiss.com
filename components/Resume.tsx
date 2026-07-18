@@ -1,4 +1,4 @@
-const RESUME_PDF = "/manu-mathew-jiss-resume.pdf";
+const RESUME_PDF = "/manu-mathew-jiss-resume-v2.pdf";
 
 export default function Resume() {
   return (
