@@ -44,7 +44,7 @@ const highlights: { label: string; sub: ReactNode }[] = [
     ),
   },
   { label: "Teaching Assistant", sub: "Security Analytics" },
-  { label: "IEEE Published", sub: "ISTAS25 Conference" },
+  { label: "IEEE Published", sub: "ISTAS25 · SMC 2026" },
 ];
 
 export default function Hero() {

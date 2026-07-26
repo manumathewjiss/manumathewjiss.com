@@ -128,9 +128,10 @@ export default function Research() {
         <h2 className="section-heading">Research</h2>
         <p className="text-sm font-semibold text-green-400/95 tracking-wide mb-2">Ongoing research</p>
         <p className="section-subheading">
-          Featured publication:{" "}
-          <span className="text-text-primary">LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Spring 2024</span>.
-          Concurrent tracks include the SMC three-phase sentiment and authenticity pipeline on social comments, Reddit software-update sentiment trajectories with a live dashboard, Jetson ROS 2 perception plus SignSight for F1TENTH, AIMoodDiary, a deployed hybrid emotion-inference journaling platform submitted to ICMLA 2026, and a white paper on explainable LLMs for cardiovascular disease detection. Cards link to papers, live apps, dashboards, conferences, and GitHub.
+          Featured publications:{" "}
+          <span className="text-text-primary">LIMFADD</span> at IEEE ISTAS25 and the{" "}
+          <span className="text-text-primary">three-phase sentiment, toxicity, and authenticity pipeline</span> at IEEE SMC 2026.
+          Concurrent tracks include Reddit software-update sentiment trajectories with a live dashboard, Jetson ROS 2 perception plus SignSight for F1TENTH, AIMoodDiary, a deployed hybrid emotion-inference journaling platform submitted to ICMLA 2026, and a white paper on explainable LLMs for cardiovascular disease detection. Cards link to papers, live apps, dashboards, conferences, and GitHub.
         </p>
 
         <div className="flex flex-col gap-6 mt-2">

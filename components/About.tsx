@@ -12,9 +12,9 @@ const stats = [
     sub: "Weather multi-DB pipeline plus three agritech CV studies (crop, areca, pest)",
   },
   {
-    value: "1+",
+    value: "2",
     label: "Peer-reviewed research",
-    sub: "IEEE ISTAS25 (LIMFADD); SMC three-phase NLP work under review",
+    sub: "IEEE ISTAS25 (LIMFADD); IEEE SMC 2026 (three-phase NLP)",
   },
   {
     value: "4+",
@@ -93,7 +93,8 @@ export default function About() {
                   Meal Muse Recipes
                 </a>{" "}
                 on the App Store, to publishing research at{" "}
-                <span className="text-white font-medium">IEEE ISTAS25</span> on fake account detection.
+                <span className="text-white font-medium">IEEE ISTAS25</span> and{" "}
+                <span className="text-white font-medium">IEEE SMC 2026</span> on social media authenticity and NLP.
                 I build things that work.
               </p>
               <p>

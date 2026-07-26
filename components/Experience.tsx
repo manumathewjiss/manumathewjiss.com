@@ -30,7 +30,7 @@ export default function Experience() {
           >
             University of the Pacific
           </a>{" "}
-          spanning Reddit trajectory analytics, NVIDIA Jetson / ROS&nbsp;2 racing stacks, SMC-review NLP authenticity pipelines, ISTAS-published LIMFADD, and RoBERTa-driven AIMoodDiary, backed by SOC analytics teaching support. Gold buttons surface live products, dashboards, conferences, or preprints; outlined rows jump to GitHub repositories.
+          spanning Reddit trajectory analytics, NVIDIA Jetson / ROS&nbsp;2 racing stacks, SMC-published NLP authenticity pipelines, ISTAS-published LIMFADD, and RoBERTa-driven AIMoodDiary, backed by SOC analytics teaching support. Gold buttons surface live products, dashboards, conferences, or preprints; outlined rows jump to GitHub repositories.
         </p>
 
         <div className="relative">
