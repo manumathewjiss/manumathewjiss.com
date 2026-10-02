@@ -101,7 +101,7 @@ export default function About() {
                 >
                   Meal Muse Recipes
                 </a>{" "}
-                on the App Store, to publishing research at{" "}
+                on the App Store, to publishing research under Dr. Tapadhir Das at{" "}
                 <span className="text-white font-medium">IEEE ISTAS25</span> and{" "}
                 <span className="text-white font-medium">IEEE SMC 2026</span> on social media authenticity and NLP.
                 I build things that work.

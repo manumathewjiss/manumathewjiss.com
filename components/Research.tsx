@@ -130,7 +130,7 @@ export default function Research() {
         <p className="section-subheading">
           Featured publications:{" "}
           <span className="text-text-primary">LIMFADD</span> at IEEE ISTAS25 and the{" "}
-          <span className="text-text-primary">three-phase sentiment, toxicity, and authenticity pipeline</span> at IEEE SMC 2026.
+          <span className="text-text-primary">three-phase sentiment, toxicity, and authenticity pipeline</span> at IEEE SMC 2026, written as a graduate research assistant under Dr. Tapadhir Das.
           An endpoint-sensitive audit of mixture-of-experts routing is under review at ICLR 2027. Concurrent tracks include Reddit software-update sentiment trajectories with a live dashboard, Jetson ROS 2 perception plus SignSight for F1TENTH, AIMoodDiary, a deployed hybrid emotion-inference journaling platform submitted to ICMLA 2026, and a white paper on explainable LLMs for cardiovascular disease detection. Cards link to papers, live apps, dashboards, conferences, and GitHub.
         </p>
 
