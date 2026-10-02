@@ -6,12 +6,14 @@ const typeColors: Record<string, string> = {
   startup: "bg-purple-500/10 text-purple-400 border-purple-500/20",
   research: "bg-blue-500/10 text-blue-400 border-blue-500/20",
   teaching: "bg-green-500/10 text-green-400 border-green-500/20",
+  internship: "bg-amber-500/10 text-amber-400 border-amber-500/20",
 };
 
 const typeLabels: Record<string, string> = {
   startup: "Startup",
   research: "Research",
   teaching: "Teaching",
+  internship: "Internship",
 };
 
 export default function Experience() {
@@ -21,7 +23,7 @@ export default function Experience() {
         <div className="accent-line" />
         <h2 className="section-heading">Experience</h2>
         <p className="section-subheading">
-          Résumé snapshot: co-founded two shipped GenAI products (LLM-guided trading insights and Meal Muse on iOS), held five concurrent graduate research roles at{" "}
+          Résumé snapshot: co-founded three shipped GenAI products (WhatToBuy shopping concierge, LLM-guided trading insights, and Meal Muse on iOS), interned on Equalizer’s mining telemetry stack, and held five concurrent graduate research roles at{" "}
           <a
             href={PACIFIC_URL}
             target="_blank"

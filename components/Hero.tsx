@@ -26,7 +26,7 @@ const roles = [
 ];
 
 const highlights: { label: string; sub: ReactNode }[] = [
-  { label: "Co-Founder", sub: "2 AI Startups" },
+  { label: "Co-Founder", sub: "3 AI Startups" },
   {
     label: "Research Assistant",
     sub: (

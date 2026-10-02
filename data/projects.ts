@@ -12,8 +12,40 @@ export interface Project {
   highlights?: string[];
 }
 
-/** Selected Projects: agritech CV pipelines, UAV analytics, classical ML baseline, weather data engineering. */
+/** Selected Projects: B2B lead scoring, BookRAG retrieval, weather ETL, agritech CV. */
 export const projects: Project[] = [
+  {
+    id: 5,
+    title: "B2B Sales Intelligence and Lead Prioritization",
+    description:
+      "Pipeline that collects and enriches company data, then scores B2B prospects. Raw evidence stays in Amazon S3, Python and Polars build PostgreSQL profiles, and XGBoost ranks leads from firmographic, growth, technology, and buying-intent features.",
+    longDescription:
+      "The pipeline starts with multi-source company records, keeps the original JSON, HTML, and documents in S3, and normalizes them into structured profiles. Entity matching collapses variant company names. Enrichment adds hiring, expansion, technology, and news signals. Feature groups cover size, growth, technology adoption, buying intent, and ideal-customer fit. An XGBoost model, compared with simpler tabular baselines, turns those features into a lead score for outreach priority.",
+    tech: ["Python", "Polars", "PostgreSQL", "Amazon S3", "XGBoost", "scikit-learn", "Pydantic"],
+    category: "Machine Learning",
+    highlights: [
+      "Raw multi-source evidence retained in Amazon S3",
+      "Polars cleaning, validation, and company-name resolution into PostgreSQL",
+      "Features for size, growth, hiring, technology, expansion, and ICP fit",
+      "XGBoost lead scores used to rank prospects for sales outreach",
+    ],
+  },
+  {
+    id: 6,
+    title: "BookRAG — Book Question Answering",
+    description:
+      "Retrieval system for digital-text books: page-aware chunks, meaning and word search, then a Qwen reranker. Passage retrieval is evaluated; the Qwen answer writer that would cite pages is the next step.",
+    longDescription:
+      "BookRAG extracts selectable PDF text page by page and chunks it at about 450 tokens with overlap, keeping book, page, and position metadata. Search combines embedding similarity (E5 and BGE-M3) with BGE-M3 lexical weights, then sends a shortlist of about 20 passages to Qwen3-Reranker-0.6B. On frozen 30-question sets, a relevant passage reached the top 10 for 30/30 Think Python, 30/30 Frankenstein, and 27/30 Pride and Prejudice questions. Those numbers measure retrieval, not generated answers. Connecting a Qwen model that answers only from those passages, with page citations, is still outstanding.",
+    tech: ["Python", "E5", "BGE-M3", "Qwen3-Reranker", "PDF", "RAG"],
+    category: "RAG / NLP",
+    highlights: [
+      "Page-level chunks of about 450 tokens with overlap, no OCR",
+      "Hybrid meaning and word search, then Qwen3-Reranker-0.6B",
+      "Hit@10 of 30/30 on Think Python and Frankenstein, 27/30 on Pride and Prejudice",
+      "Answer generation with page citations is specified and not yet connected",
+    ],
+  },
   {
     id: 1,
     title: "Weather Data Engineering Pipeline",

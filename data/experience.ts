@@ -3,7 +3,7 @@ export interface Experience {
   role: string;
   company: string;
   duration: string;
-  type: "startup" | "research" | "teaching";
+  type: "startup" | "research" | "teaching" | "internship";
   bullets: string[];
   tech?: string[];
   /** Primary URL (live app, dashboard, publication, conference, etc.) */
@@ -17,6 +17,21 @@ export interface Experience {
 
 
 export const experiences: Experience[] = [
+  {
+    id: 12,
+    role: "Co-Founder & Software Engineer",
+    company: "WhatToBuy (AI Shopping Concierge)",
+    duration: "March 2026 – Present",
+    type: "startup",
+    link: "https://whattobuy.app",
+    linkLabel: "whattobuy.app",
+    bullets: [
+      "Co-founded WhatToBuy (whattobuy.app), a live shopping concierge that turns a natural-language scenario into one purchase-ready cart with prices, ratings, stores, and buy links.",
+      "Shipped Fast and Guided modes: Claude Haiku extracts requirements, Claude Sonnet runs follow-up questions, and products come from Google Shopping, Amazon, and eBay.",
+      "Added rating, review, and budget filters, affiliate buy links, Supabase accounts, and Postgres caching, with the app on Vercel and the API on Railway.",
+    ],
+    tech: ["Next.js", "TypeScript", "FastAPI", "Claude", "Supabase", "PostgreSQL", "Vercel", "Railway"],
+  },
   {
     id: 1,
     role: "Co-Founder & Software Engineer",
@@ -48,6 +63,19 @@ export const experiences: Experience[] = [
       "Productized onboarding, recipe steps, calorie estimates, and privacy-forward analytics hooks suitable for iterative App Store releases.",
     ],
     tech: ["Swift", "SwiftUI", "Node.js", "TypeScript", "PostgreSQL", "OpenAI", "Fastify"],
+  },
+  {
+    id: 13,
+    role: "Machine Learning Engineering Intern",
+    company: "Equalizer (Dubai, UAE · Remote)",
+    duration: "May 2023 – July 2024",
+    type: "internship",
+    bullets: [
+      "Worked on Equalizer, mining-infrastructure software that monitors machines, detects failures, and redistributes hash power so one outage does not wipe out a customer’s capacity.",
+      "Developed and deployed Python telemetry analytics pipelines with FastAPI, PostgreSQL, and Docker for distributed-infrastructure visibility.",
+      "Applied anomaly detection and time-series forecasting to machine health and hash-rate signals.",
+    ],
+    tech: ["Python", "FastAPI", "PostgreSQL", "Docker", "Anomaly Detection", "Time-Series"],
   },
   {
     id: 3,

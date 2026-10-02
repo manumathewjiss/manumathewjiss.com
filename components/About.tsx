@@ -7,9 +7,9 @@ const stats = [
     sub: "Pacific labs covering NLP, robotics, student wellness, Reddit/VADER workloads",
   },
   {
-    value: "4",
+    value: "6",
     label: "Documented builds",
-    sub: "Weather multi-DB pipeline plus three agritech CV studies (crop, areca, pest)",
+    sub: "B2B lead scoring, BookRAG retrieval, weather pipeline, and three agritech CV studies",
   },
   {
     value: "2",
@@ -74,16 +74,25 @@ export default function About() {
                 at the boundary between research and real-world deployment.
               </p>
               <p>
-                From co-founding a{" "}
+                From co-founding{" "}
+                <a
+                  href="https://whattobuy.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent font-medium underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                >
+                  WhatToBuy
+                </a>
+                , an AI shopping concierge, and{" "}
                 <a
                   href="https://stockcrusher.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent font-medium underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
                 >
-                  GenAI trading startup (Stock Crusher)
-                </a>{" "}
-                and launching{" "}
+                  Stock Crusher
+                </a>
+                , a GenAI trading platform, to launching{" "}
                 <a
                   href="https://apps.apple.com/us/app/meal-muse-recipes/id6757258154"
                   target="_blank"

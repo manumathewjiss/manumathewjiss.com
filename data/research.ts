@@ -17,6 +17,18 @@ export interface Research {
 
 export const research: Research[] = [
   {
+    id: 7,
+    title: "Endpoint-Sensitive Causal Audits of Mixture-of-Experts Safety",
+    description:
+      "Audited one-step routing interventions in OLMoE and Qwen3-MoE, separating a changed next token from attention-cache effects and comparing answer-prefix grades with complete-answer grades. In the reserved misinformation study, routing changes often rewrote later text but produced no complete-answer compliance-label changes. Anonymous submission under review at ICLR 2027.",
+    conference: "ICLR 2027 (under review)",
+    date: "August 2026",
+    link: "https://openreview.net/forum?id=WKAeqAv0JU",
+    linkLabel: "OpenReview submission",
+    type: "ongoing",
+    tags: ["Mixture of Experts", "OLMoE", "Qwen3", "Safety Evaluation", "Causal Interventions"],
+  },
+  {
     id: 1,
     title: "LIMFADD: LLM-Enabled Instagram Multi-Class Fake Account Detection Spring 2024",
     description:

@@ -10,6 +10,8 @@ const categoryColors: Record<string, string> = {
   "Data Engineering": "bg-orange-500/10 text-orange-400 border-orange-500/20",
   "Robotics / Embedded AI": "bg-red-500/10 text-red-400 border-red-500/20",
   "Computer Vision": "bg-teal-500/10 text-teal-400 border-teal-500/20",
+  "Machine Learning": "bg-violet-500/10 text-violet-300 border-violet-400/20",
+  "RAG / NLP": "bg-emerald-500/10 text-emerald-300 border-emerald-400/20",
 };
 
 export default function Projects() {
@@ -27,7 +29,7 @@ export default function Projects() {
         <div className="accent-line" />
         <h2 className="section-heading">Selected Projects</h2>
         <p className="section-subheading">
-          Deep dives from coursework documentation: UAV crop analytics, classical ML scouting, and a multi-database weather stack. Where a demo URL exists it appears as the gold button.
+          B2B lead scoring and BookRAG book retrieval sit alongside the weather pipeline and agritech vision studies. Where a demo URL exists it appears as the gold button.
         </p>
 
         {/* Filter tabs */}

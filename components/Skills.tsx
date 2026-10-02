@@ -3,8 +3,8 @@ const skillCategories = [
     title: "Machine Learning & AI",
     skills: [
       "TensorFlow", "PyTorch", "Scikit-learn", "HuggingFace",
-      "LLMs", "RAG", "NLP", "RoBERTa", "BERTweet", "BART",
-      "YOLOv5", "ResNet-50", "SHAP", "LIME", "OpenAI API",
+      "LLMs", "Claude", "RAG", "NLP", "RoBERTa", "BERTweet", "BART",
+      "YOLOv5", "ResNet-50", "XGBoost", "SHAP", "LIME", "OpenAI API",
       "Gemini API", "Zero-Shot Learning", "Sentiment Analysis",
     ],
   },
@@ -25,7 +25,7 @@ const skillCategories = [
   {
     title: "Databases & Data Engineering",
     skills: [
-      "MongoDB", "PostgreSQL", "Redis", "ClickHouse",
+      "MongoDB", "PostgreSQL", "Supabase", "Redis", "ClickHouse", "Polars", "Amazon S3",
       "ETL Pipelines", "Data Warehousing", "Prisma ORM",
       "Incremental ETL", "Metadata Lineage",
     ],
@@ -34,7 +34,7 @@ const skillCategories = [
     title: "DevOps & Tools",
     skills: [
       "Docker", "Git/GitHub", "Linux (Ubuntu)", "Vercel",
-      "Render.com", "CUDA", "VS Code", "Jupyter Notebook",
+      "Railway", "Render.com", "CUDA", "VS Code", "Jupyter Notebook",
     ],
   },
   {
