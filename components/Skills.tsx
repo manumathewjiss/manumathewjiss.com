@@ -5,7 +5,7 @@ const skillCategories = [
       "TensorFlow", "PyTorch", "Scikit-learn", "HuggingFace",
       "LLMs", "Claude", "RAG", "NLP", "RoBERTa", "BERTweet", "BART",
       "YOLOv5", "ResNet-50", "XGBoost", "SHAP", "LIME", "OpenAI API",
-      "Gemini API", "Zero-Shot Learning", "Sentiment Analysis",
+      "Gemini API", "Amazon Nova", "AWS Bedrock", "Qwen", "LoRA", "FAISS", "LangChain", "Voyage AI", "Whisper", "pgvector", "Zero-Shot Learning", "Sentiment Analysis",
     ],
   },
   {
@@ -25,7 +25,7 @@ const skillCategories = [
   {
     title: "Databases & Data Engineering",
     skills: [
-      "MongoDB", "PostgreSQL", "Supabase", "Redis", "ClickHouse", "Polars", "Amazon S3",
+      "MongoDB", "MongoDB Atlas", "PostgreSQL", "Supabase", "SQLite", "Redis", "ClickHouse", "Polars", "Amazon S3",
       "ETL Pipelines", "Data Warehousing", "Prisma ORM",
       "Incremental ETL", "Metadata Lineage",
     ],
@@ -34,7 +34,7 @@ const skillCategories = [
     title: "DevOps & Tools",
     skills: [
       "Docker", "Git/GitHub", "Linux (Ubuntu)", "Vercel",
-      "Railway", "Render.com", "CUDA", "VS Code", "Jupyter Notebook",
+      "Railway", "Render.com", "Fly.io", "CUDA", "VS Code", "Jupyter Notebook",
     ],
   },
   {
@@ -42,7 +42,7 @@ const skillCategories = [
     skills: [
       "ROS 2 Humble", "NVIDIA Jetson Orin Nano", "LiDAR",
       "ZED Stereo Camera", "Sensor Fusion", "Raspberry Pi",
-      "Arduino", "Embedded Linux", "JetPack SDK",
+      "ADS1115", "Embedded Linux", "JetPack SDK",
     ],
   },
   {
@@ -98,9 +98,9 @@ export default function Skills() {
           </h3>
           <div className="flex flex-wrap gap-2">
             {[
-              "Reddit API (PRAW)", "Twitter/X API", "YouTube Data API",
+              "Reddit API (PRAW)", "Twitter/X API", "Apollo API", "Serper", "Amazon Creators API", "eBay Browse API",
               "Yahoo Finance", "NewsAPI", "Finnhub", "Alpha Vantage",
-              "GNews", "OpenWeather API", "Google Cloud APIs",
+              "GNews", "Open-Meteo API", "OpenWeather API", "Google Cloud APIs",
             ].map((api) => (
               <span
                 key={api}

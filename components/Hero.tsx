@@ -146,7 +146,7 @@ export default function Hero() {
           </div>
 
           <p className="text-text-secondary leading-relaxed max-w-md mb-8 text-sm">
-            Master&apos;s student in Computer Science at{" "}
+            Master&apos;s graduate in Computer Science at{" "}
             <a
               href={PACIFIC_URL}
               target="_blank"
@@ -155,8 +155,7 @@ export default function Hero() {
             >
               University of the Pacific
             </a>
-            . Building AI systems that work in the real world, from multi-model
-            trading platforms to autonomous robots.
+            . Building useful AI products and research tools, from cited PDF answers and Sanskrit search to autonomous robots.
           </p>
 
           {/* CTA Buttons */}

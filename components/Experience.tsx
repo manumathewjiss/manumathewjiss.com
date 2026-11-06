@@ -23,16 +23,8 @@ export default function Experience() {
         <div className="accent-line" />
         <h2 className="section-heading">Experience</h2>
         <p className="section-subheading">
-          Résumé snapshot: co-founded three shipped GenAI products (WhatToBuy shopping concierge, LLM-guided trading insights, and Meal Muse on iOS), interned on Equalizer’s mining telemetry stack, and held five concurrent graduate research roles at{" "}
-          <a
-            href={PACIFIC_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent underline decoration-accent/45 underline-offset-4 hover:decoration-accent"
-          >
-            University of the Pacific
-          </a>{" "}
-          spanning Reddit trajectory analytics, NVIDIA Jetson / ROS&nbsp;2 racing stacks, SMC-published NLP authenticity pipelines, ISTAS-published LIMFADD, and RoBERTa-driven AIMoodDiary, backed by SOC analytics teaching support. Gold buttons surface live products, dashboards, conferences, or preprints; outlined rows jump to GitHub repositories.
+          Co-founded AI products in shopping, market analysis, and food technology; built research systems in language AI, wellness, and autonomous robotics; and taught security analytics at{" "}
+          <a href={PACIFIC_URL} target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-accent/45 underline-offset-4 hover:decoration-accent">University of the Pacific</a>. Each role highlights the work and the tools used.
         </p>
 
         <div className="relative">

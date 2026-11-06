@@ -7,9 +7,9 @@ const stats = [
     sub: "Pacific labs covering NLP, robotics, student wellness, Reddit/VADER workloads",
   },
   {
-    value: "6",
-    label: "Documented builds",
-    sub: "B2B lead scoring, BookRAG retrieval, weather pipeline, and three agritech CV studies",
+    value: "13",
+    label: "Selected projects",
+    sub: "AI products, language tools, robotics, data systems, and computer vision",
   },
   {
     value: "2",
@@ -17,9 +17,9 @@ const stats = [
     sub: "IEEE ISTAS25 (LIMFADD); IEEE SMC 2026 (three-phase NLP)",
   },
   {
-    value: "4+",
-    label: "Data stack layers",
-    sub: "MongoDB lake, ClickHouse warehouse, Redis cache, Express services (weather system)",
+    value: "3",
+    label: "Live AI products",
+    sub: "WhatToBuy, Stock Crusher, and MealMuse",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function About() {
               <p>
                 I&apos;m a{" "}
                 <span className="text-white font-medium">
-                  Master&apos;s student in Computer Science
+                  Master&apos;s graduate in Computer Science
                 </span>{" "}
                 at the{" "}
                 <a
@@ -107,8 +107,8 @@ export default function About() {
                 I build things that work.
               </p>
               <p>
-                My research spans NLP, transformer models, autonomous robotics,
-                and data engineering. I&apos;ve worked as a{" "}
+                My work spans document question answering, language models,
+                autonomous robotics, connected sensors, and data engineering. I&apos;ve worked as a{" "}
                 <span className="text-white font-medium">
                   Graduate Research Assistant
                 </span>{" "}

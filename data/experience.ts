@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
     bullets: [
       "Co-founded WhatToBuy (whattobuy.app), a live shopping concierge that turns a natural-language scenario into one purchase-ready cart with prices, ratings, stores, and buy links.",
       "Shipped Fast and Guided modes: Claude Haiku extracts requirements, Claude Sonnet runs follow-up questions, and products come from Google Shopping, Amazon, and eBay.",
-      "Added rating, review, and budget filters, affiliate buy links, Supabase accounts, and Postgres caching, with the app on Vercel and the API on Railway.",
+      "Built product filtering, alternatives, saved carts, affiliate links, and Supabase accounts; the Next.js app runs on Vercel and the FastAPI service on Railway.",
     ],
     tech: ["Next.js", "TypeScript", "FastAPI", "Claude", "Supabase", "PostgreSQL", "Vercel", "Railway"],
   },
@@ -43,10 +43,10 @@ export const experiences: Experience[] = [
     github: "https://github.com/manumathewjiss/Stock-Crusher",
     bullets: [
       "Built and shipped Stock Crusher, a production multi-agent trading intelligence platform integrating 8+ real-time APIs (Reddit, Finnhub, NewsAPI, X/Twitter).",
-      "Implemented weighted triple-AI consensus (Gemini, Perplexity, OpenAI), custom momentum scoring, and deterministic guardrails powering BUY / SELL / HOLD outputs.",
-      "Delivered Flask services and a React + Tailwind analytics dashboard deployed on Render for resilient day-to-day use.",
+      "Combined Gemini, Perplexity, OpenAI, and Amazon Nova analysis with momentum views, risk checks, watchlist summaries, and voice features.",
+      "Built the Flask API and React dashboard with Vite, Tailwind CSS, AWS Bedrock, and Amazon Polly; deployed the web service on Render.",
     ],
-    tech: ["Python", "Flask", "React", "OpenAI", "Gemini", "Perplexity", "Render.com"],
+    tech: ["Python", "Flask", "React", "Vite", "Tailwind CSS", "Gemini", "Perplexity", "OpenAI", "Amazon Nova", "AWS Bedrock", "Amazon Polly", "Render"],
   },
   {
     id: 2,
@@ -59,10 +59,10 @@ export const experiences: Experience[] = [
     github: "https://github.com/chjose/recipes",
     bullets: [
       "Launched Meal Muse Recipes on the App Store: SwiftUI client with Fastify + PostgreSQL backend for secure, scalable recipe workflows.",
-      "Shipped multimodal prompting (text, optional voice/image) against GPT-style models plus TTL caching and quotas, targeting ~80–90% fewer redundant LLM calls.",
-      "Productized onboarding, recipe steps, calorie estimates, and privacy-forward analytics hooks suitable for iterative App Store releases.",
+      "Built text and voice recipe requests with spoken cooking steps, using SwiftUI, Apple Speech, OpenAI, and a TypeScript API.",
+      "Added guided recipe steps, account sign-in, profile onboarding, and dietary preferences backed by PostgreSQL.",
     ],
-    tech: ["Swift", "SwiftUI", "Node.js", "TypeScript", "PostgreSQL", "OpenAI", "Fastify"],
+    tech: ["Swift", "SwiftUI", "Apple Speech", "Node.js", "TypeScript", "Fastify", "Prisma", "PostgreSQL", "OpenAI", "Fly.io"],
   },
   {
     id: 13,
@@ -100,8 +100,8 @@ export const experiences: Experience[] = [
     linkLabel: "AIMoodDiary",
     github: "https://github.com/manumathewjiss/moodmirror-student-wellness-tracker",
     bullets: [
-      "Shipped AIMoodDiary: a student emotional wellness journaling suite that blends GPT-assisted reflections with interactive mood analytics dashboards.",
-      "Fine-tuned a RoBERTa classifier on supervised affect corpora to surface weekly emotion trends alongside estimated confidence bands.",
+      "Built AIMoodDiary, a live reflective-journaling app with emotion-aware writing support and a mood analytics dashboard.",
+      "Used RoBERTa trained on GoEmotions alongside LLM-assisted diary generation and longitudinal emotion views.",
       "Next.js frontend, FastAPI microservices, and PostgreSQL back-end deliver rapid iteration cycles for stakeholder demos and longitudinal studies.",
     ],
     tech: ["Next.js", "FastAPI", "PostgreSQL", "RoBERTa", "GPT-4o-mini"],
@@ -146,11 +146,11 @@ export const experiences: Experience[] = [
     linkLabel: "Live dashboard",
     github: "https://github.com/manumathewjiss/vader-sentiment-dashboard/tree/main/research-open-text-sentimental",
     bullets: [
-      "Modeled longitudinal sentiment on 324+ ReleaseTrain-fed Reddit cohorts spanning minScore/maxScore-balanced slices pulled via official APIs.",
-      "Engineered reproducible ingestion + QA scripts (duplicate filtering, lexical checks) before VADER-derived trajectories are visualized in Plotly.",
-      "Deployed a public comparative VADER storytelling dashboard highlighting author vs community drift, backed by adjudicated confusion-matrix baselines.",
+      "Studied Reddit software-update discussions across three connected papers on discussion purpose, diagnostic evidence, and sentiment dynamics.",
+      "Used Python, VADER, TextBlob, RoBERTa, SentiStrength-SE, and scikit-learn to compare how sentiment changes with speaker, text, and discussion stage.",
+      "Built a Plotly dashboard showing author and community sentiment trajectories, with reviewed labels supporting the research analysis.",
     ],
-    tech: ["Python", "VADER", "REST APIs", "NLP", "Data Visualization"],
+    tech: ["Python", "VADER", "TextBlob", "RoBERTa", "scikit-learn", "Plotly", "Reddit API"],
   },
   {
     id: 6,

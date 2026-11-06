@@ -62,16 +62,16 @@ export const research: Research[] = [
   },
   {
     id: 3,
-    title: "Sentiment Trajectory Analysis in Software Update Reddit Discussions",
+    title: "Purpose and Sentiment in Reddit Software-Update Discussions",
     description:
-      "Large-scale trajectory research on 324+ Reddit discussions in the ReleaseTrain.io ecosystem. Built a Python pipeline using VADER, REST cohort APIs, and custom reliability metrics comparing author versus community sentiment, validated via human labeling and confusion matrices.",
+      "A three-paper research program separating technical problem solving from general dissatisfaction, examining what troubleshooting evidence posts contain, and studying how sentiment depends on speaker, conversation stage, text span, and analysis method. Built a public dashboard of author and community sentiment trajectories with Python, VADER, and Plotly.",
     date: "Summer 2025 – Present",
     type: "ongoing",
     advisor: "Dr. Solomon Berhe, University of the Pacific",
     link: "https://beamish-custard-f44097.netlify.app/research-open-text-sentimental/web/",
     linkLabel: "Open live dashboard",
     github: "https://github.com/manumathewjiss/vader-sentiment-dashboard/tree/main/research-open-text-sentimental",
-    tags: ["NLP", "VADER", "Sentiment Analysis", "Reddit API", "Data Visualization"],
+    tags: ["Python", "VADER", "RoBERTa", "TextBlob", "scikit-learn", "Plotly", "Reddit API"],
   },
   {
     id: 4,
