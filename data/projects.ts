@@ -20,7 +20,7 @@ export const projects: Project[] = [
     description: "A private PDF library that finds relevant passages, answers questions, and links citations to original pages.",
     longDescription: "BookRAG grew from page-aware PDF retrieval research into a cloud app with accounts, private uploads, background processing, answers with source passages, and an in-browser PDF viewer. The research benchmarks and cloud product are separate parts of the project.",
     tech: ["Python", "FastAPI", "Next.js", "TypeScript", "PostgreSQL", "pgvector", "Supabase", "Voyage AI", "OpenAI", "PDF.js", "Render", "Vercel"],
-    demo: "https://bookrag.vercel.app/", demoLabel: "Explore BookRAG", github: "https://github.com/manumathewjiss/sanskrity",
+    demo: "https://bookrag.vercel.app/", demoLabel: "Explore BookRAG", github: "https://github.com/manumathewjiss/BookRAG",
     highlights: ["Private accounts and PDF library", "Answers with passage and page citations", "Background PDF processing", "Research comparing search and answer methods"],
   },
   {
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     description: "A locally run scripture assistant with English and Devanagari questions and verse-level citations.",
     longDescription: "Sanskrity searches paired Sanskrit and English verses from the Ramayana and Mahabharata, then generates an explanation citing the book, chapter, and verse. It also accepts PDF, DOCX, and text documents as user context.",
     tech: ["Python", "FastAPI", "Qwen", "LoRA", "PyTorch", "FAISS", "multilingual-e5-large", "LangChain", "Whisper", "MongoDB Atlas", "JavaScript"],
-    github: "https://github.com/manumathewjiss/sanskrity",
+    github: "https://github.com/manumathewjiss/sanskriti-ai",
     highlights: ["Sanskrit and English verse search", "Local Qwen model adapted with LoRA", "FAISS search with multilingual embeddings", "Document upload, web chat, and speech input"],
   },
   {
@@ -36,6 +36,7 @@ export const projects: Project[] = [
     description: "A connected plant-monitoring system combining soil sensors, local weather data, a cloud API, and a dashboard.",
     longDescription: "Raspberry Pi software reads soil-moisture sensors through an ADS1115 converter, stores readings locally, and adds weather context. A FastAPI service stores data in PostgreSQL, while a React dashboard shows plant status and sensor history.",
     tech: ["Python", "Raspberry Pi", "ADS1115", "SQLite", "Open-Meteo", "FastAPI", "PostgreSQL", "React", "TypeScript", "Docker"],
+    github: "https://github.com/SE4CPS/PlantWaterSystem",
     highlights: ["Raspberry Pi sensor readings", "Weather-enriched plant readings", "FastAPI and PostgreSQL service", "React dashboard for plant history"],
   },
   {
@@ -54,19 +55,19 @@ export const projects: Project[] = [
     highlights: ["Fast guest flow and Guided conversations", "Google Shopping, Amazon, and eBay sources", "Product alternatives and saved carts", "Accounts and affiliate buying links"],
   },
   {
-    id: 10, title: "Stock Crusher — Multi-Model Market Analysis", category: "AI / Full-Stack",
-    description: "A market dashboard with live data, several AI models, risk checks, voice summaries, and watchlist analysis.",
-    longDescription: "Stock Crusher collects market, news, and social data. Gemini, Perplexity, OpenAI, and Amazon Nova contribute to analysis; a Flask service powers the React dashboard, momentum views, and Nova-assisted tools.",
-    tech: ["Python", "Flask", "React", "Vite", "Tailwind CSS", "Gemini", "Perplexity", "OpenAI", "Amazon Nova", "Amazon Polly", "AWS Bedrock", "Render"],
-    demo: "https://stockcrusher.com", demoLabel: "Visit Stock Crusher", github: "https://github.com/manumathewjiss/Stock-Crusher",
-    highlights: ["Four-model analysis and risk review", "Reddit, news, social, and market data", "Voice summaries and watchlist analysis", "React dashboard with momentum views"],
+    id: 10, title: "Stock Crusher — AI Market Analysis", category: "AI / Full-Stack",
+    description: "A market dashboard that combines Reddit, news, and financial data with three AI models and momentum tracking.",
+    longDescription: "Stock Crusher collects market, news, and social data, then combines analysis from Gemini, Perplexity, and OpenAI. A Flask service powers the React dashboard, analysis history, and momentum rankings.",
+    tech: ["Python", "Flask", "React", "Vite", "Tailwind CSS", "Gemini", "Perplexity", "OpenAI", "Reddit API", "Finnhub", "Render"],
+    demo: "https://stockcrusher.com", demoLabel: "Visit Stock Crusher",
+    highlights: ["Three-model consensus analysis", "Reddit, news, social, and market data", "Analysis history and momentum rankings", "Flask API and React dashboard"],
   },
   {
     id: 11, title: "MealMuse — AI Recipe Companion", category: "AI / iOS",
     description: "An iOS recipe app that turns a request or ingredients into guided recipes with voice-friendly cooking steps.",
     longDescription: "MealMuse uses a SwiftUI app and TypeScript API to create structured recipes. It supports text and voice input, spoken steps, sign-in, onboarding, and cooking preferences.",
     tech: ["Swift", "SwiftUI", "Apple Speech", "Node.js", "TypeScript", "Fastify", "Prisma", "PostgreSQL", "OpenAI", "Fly.io"],
-    demo: "https://apps.apple.com/us/app/meal-muse-recipes/id6757258154", demoLabel: "View on App Store", github: "https://github.com/chjose/recipes",
+    demo: "https://apps.apple.com/us/app/meal-muse-recipes/id6757258154", demoLabel: "View on App Store",
     highlights: ["Native iOS cooking flow", "Voice input and spoken steps", "Profiles and dietary preferences", "TypeScript API and PostgreSQL"],
   },
   {
@@ -90,6 +91,7 @@ export const projects: Project[] = [
     longDescription: "Node.js scripts collect historical weather data, keep raw records in MongoDB, prepare analytical tables in ClickHouse, and cache dashboard results in Redis. An Express API serves Chart.js visualizations.",
     tech: ["Node.js", "JavaScript", "Open-Meteo", "MongoDB Atlas", "ClickHouse", "Redis", "Express", "Chart.js"],
     highlights: ["Historical Open-Meteo ingestion", "MongoDB storage and ClickHouse analytics", "Redis caching", "Express API and Chart.js dashboard"],
+    github: "https://github.com/manumathewjiss/Weather-Data-App",
   },
   {
     id: 2, title: "Crop Monitoring & Maturity Detection", category: "Computer Vision",

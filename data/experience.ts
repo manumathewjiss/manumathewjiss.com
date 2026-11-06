@@ -40,13 +40,12 @@ export const experiences: Experience[] = [
     type: "startup",
     link: "https://stockcrusher.com",
     linkLabel: "stockcrusher.com",
-    github: "https://github.com/manumathewjiss/Stock-Crusher",
     bullets: [
       "Built and shipped Stock Crusher, a production multi-agent trading intelligence platform integrating 8+ real-time APIs (Reddit, Finnhub, NewsAPI, X/Twitter).",
-      "Combined Gemini, Perplexity, OpenAI, and Amazon Nova analysis with momentum views, risk checks, watchlist summaries, and voice features.",
-      "Built the Flask API and React dashboard with Vite, Tailwind CSS, AWS Bedrock, and Amazon Polly; deployed the web service on Render.",
+      "Combined Gemini, Perplexity, and OpenAI analysis with consensus recommendations, confidence scores, and momentum tracking.",
+      "Built the Flask API and React dashboard with Vite and Tailwind CSS; deployed the web service on Render.",
     ],
-    tech: ["Python", "Flask", "React", "Vite", "Tailwind CSS", "Gemini", "Perplexity", "OpenAI", "Amazon Nova", "AWS Bedrock", "Amazon Polly", "Render"],
+    tech: ["Python", "Flask", "React", "Vite", "Tailwind CSS", "Gemini", "Perplexity", "OpenAI", "Reddit API", "Finnhub", "Render"],
   },
   {
     id: 2,
@@ -56,7 +55,6 @@ export const experiences: Experience[] = [
     type: "startup",
     link: "https://apps.apple.com/us/app/meal-muse-recipes/id6757258154",
     linkLabel: "App Store",
-    github: "https://github.com/chjose/recipes",
     bullets: [
       "Launched Meal Muse Recipes on the App Store: SwiftUI client with Fastify + PostgreSQL backend for secure, scalable recipe workflows.",
       "Built text and voice recipe requests with spoken cooking steps, using SwiftUI, Apple Speech, OpenAI, and a TypeScript API.",
@@ -144,7 +142,9 @@ export const experiences: Experience[] = [
     type: "research",
     link: "https://beamish-custard-f44097.netlify.app/research-open-text-sentimental/web/",
     linkLabel: "Live dashboard",
-    github: "https://github.com/manumathewjiss/vader-sentiment-dashboard/tree/main/research-open-text-sentimental",
+    github: "https://github.com/manumathewjiss/Research-on-Software-Updates",
+    secondaryLink: "https://github.com/SE4CPS/Research-on-Software-Updates",
+    secondaryLinkLabel: "Earlier research repository",
     bullets: [
       "Studied Reddit software-update discussions across three connected papers on discussion purpose, diagnostic evidence, and sentiment dynamics.",
       "Used Python, VADER, TextBlob, RoBERTa, SentiStrength-SE, and scikit-learn to compare how sentiment changes with speaker, text, and discussion stage.",

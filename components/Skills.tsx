@@ -5,7 +5,7 @@ const skillCategories = [
       "TensorFlow", "PyTorch", "Scikit-learn", "HuggingFace",
       "LLMs", "Claude", "RAG", "NLP", "RoBERTa", "BERTweet", "BART",
       "YOLOv5", "ResNet-50", "XGBoost", "SHAP", "LIME", "OpenAI API",
-      "Gemini API", "Amazon Nova", "AWS Bedrock", "Qwen", "LoRA", "FAISS", "LangChain", "Voyage AI", "Whisper", "pgvector", "Zero-Shot Learning", "Sentiment Analysis",
+      "Gemini API", "Qwen", "LoRA", "FAISS", "LangChain", "Voyage AI", "Whisper", "pgvector", "Zero-Shot Learning", "Sentiment Analysis",
     ],
   },
   {

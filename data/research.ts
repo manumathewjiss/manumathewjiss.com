@@ -70,7 +70,9 @@ export const research: Research[] = [
     advisor: "Dr. Solomon Berhe, University of the Pacific",
     link: "https://beamish-custard-f44097.netlify.app/research-open-text-sentimental/web/",
     linkLabel: "Open live dashboard",
-    github: "https://github.com/manumathewjiss/vader-sentiment-dashboard/tree/main/research-open-text-sentimental",
+    github: "https://github.com/manumathewjiss/Research-on-Software-Updates",
+    secondaryLink: "https://github.com/SE4CPS/Research-on-Software-Updates",
+    secondaryLinkLabel: "Earlier research repository",
     tags: ["Python", "VADER", "RoBERTa", "TextBlob", "scikit-learn", "Plotly", "Reddit API"],
   },
   {
