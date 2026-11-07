@@ -32,7 +32,7 @@ export default function Projects() {
 
         <div className="grid items-start md:grid-cols-2 xl:grid-cols-3 gap-5">
           {visible.map((project) => (
-            <article key={project.id} className={`glass-card flex flex-col relative overflow-hidden ${project.featured ? "border-accent/25 bg-gradient-to-br from-accent/[0.07] via-bg-card to-bg-card" : ""}`}>
+            <article key={project.id} className={`glass-card relative self-start h-auto overflow-hidden ${project.featured ? "border-accent/25 bg-gradient-to-br from-accent/[0.07] via-bg-card to-bg-card" : ""}`}>
               <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-accent/70 via-accent/20 to-transparent" />
               <div className="flex items-center justify-between gap-2 mb-4">
                 <span className="text-[11px] uppercase tracking-wider font-semibold text-accent">{project.category}</span>
@@ -52,7 +52,7 @@ export default function Projects() {
                   {project.highlights && <ul className="mt-3 space-y-2">{project.highlights.map((h) => <li key={h} className="flex gap-2"><span className="text-accent">•</span>{h}</li>)}</ul>}
                 </div>
               )}
-              <div className="flex flex-wrap items-center gap-3 mt-auto pt-2 border-t border-border-subtle">
+              <div className="flex flex-wrap items-center gap-3 mt-4 pt-2 border-t border-border-subtle">
                 <button type="button" aria-expanded={expanded.includes(project.id)} aria-controls={`project-details-${project.id}`}
                   onClick={() => toggleExpanded(project.id)}
                   className="text-xs font-semibold text-accent hover:text-white py-2">
